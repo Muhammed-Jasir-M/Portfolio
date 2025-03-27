@@ -10,16 +10,16 @@ export default function Home() {
         <div className="flex flex-col xl:flex-row items-center justify-between pt-6 xl:pt-9 xl:pb-12 h-full">
           <div className="text-center xl:text-left order-2 xl:order-none">
             <h1 className="text-xl xl:text-2xl mb-2 xl:mb-0">
-              Hello, I'm <br />
+              Hello, I&apos;m <br />
               <span className="h2 text-accent">Muhammed Jasir M</span>
             </h1>
 
             <span className="text-xl">Software Developer</span>
 
             <p className="max-w-[500px] mb-4 mt-4 xl:mt-2.5 text-white/80">
-              I'm a software developer based in Kerala, India. I have a passion
-              for software development and love to create things that make a
-              difference. I specialize in Flutter, React, and MERN stack
+              I&apos;m a software developer based in Kerala, India. I have a
+              passion for software development and love to create things that
+              make a difference. I specialize in Flutter, React, and MERN stack
               development.
             </p>
 
