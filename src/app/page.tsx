@@ -32,11 +32,13 @@ export default function Home() {
                 <span>Download CV</span>
                 <FiDownload className="text-xl" />
               </Button>
+
               <div className="mb-8 xl:mb-0">
                 <Social />
               </div>
             </div>
           </div>
+
           <div className="order-1 xl:order-none mb-8 xl:mb-0">
             <Photo />
           </div>
