@@ -1,5 +1,6 @@
 import Photo from "@/components/Photo";
 import Social from "@/components/Socials";
+import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
@@ -7,7 +8,7 @@ export default function Home() {
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
-        <div className="flex flex-col xl:flex-row items-center justify-between pt-6 xl:pt-9 xl:pb-12 h-full">
+        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-16">
           <div className="text-center xl:text-left order-2 xl:order-none">
             <h1 className="text-xl xl:text-2xl mb-2 xl:mb-0">
               Hello, I&apos;m <br />
@@ -44,6 +45,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Stats />
     </section>
   );
 }
