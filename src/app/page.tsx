@@ -8,23 +8,23 @@ export default function Home() {
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-16">
-          <div className="text-center xl:text-left order-2 xl:order-none">
-            <h1 className="text-xl xl:text-2xl mb-2 xl:mb-0">
+        <div className="flex flex-col lg:flex-row items-center justify-between px-0 lg:px-6 xl:px-0 lg:pt-8 lg:pb-16">
+          <div className="text-center lg:text-left order-2 lg:order-none">
+            <h1 className="text-xl lg:text-2xl mb-2 lg:mb-0">
               Hello, I&apos;m <br />
               <span className="h2 text-accent">Muhammed Jasir M</span>
             </h1>
 
             <span className="text-xl">Software Developer</span>
 
-            <p className="max-w-[500px] mb-4 mt-4 xl:mt-2.5 text-white/80">
+            <p className="max-w-[500px] mb-4 mt-4 lg:mt-2.5 text-white/80">
               I&apos;m a software developer based in Kerala, India. I have a
               passion for software development and love to create things that
               make a difference. I specialize in Flutter, React, and MERN stack
               development.
             </p>
 
-            <div className="flex flex-col xl:flex-row items-center gap-8 ">
+            <div className="flex flex-col lg:flex-row items-center gap-8 ">
               <Button
                 variant={"outline"}
                 size={"lg"}
@@ -34,13 +34,13 @@ export default function Home() {
                 <FiDownload className="text-xl" />
               </Button>
 
-              <div className="mb-8 xl:mb-0">
+              <div className="mb-8 lg:mb-0">
                 <Social />
               </div>
             </div>
           </div>
 
-          <div className="order-1 xl:order-none mb-8 xl:mb-0">
+          <div className="order-1 lg:order-none mb-8 lg:mb-0">
             <Photo />
           </div>
         </div>

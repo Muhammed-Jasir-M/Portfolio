@@ -5,7 +5,7 @@ import MobileNavbar from "./MobileNavbar";
 
 const Header = () => {
   return (
-    <header className="py-4 xl:py-6">
+    <header className="px-4 py-4 lg:py-6">
       <div className="container mx-auto flex justify-between items-center">
         <Link href={"/"}>
           <h1 className="text-4xl font-semibold">
@@ -13,14 +13,14 @@ const Header = () => {
           </h1>
         </Link>
 
-        <div className="hidden xl:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           <Navbar />
           <Link href={"/contact"}>
             <Button variant={"outline"}>Hire me</Button>
           </Link>
         </div>
 
-        <div className="xl:hidden">
+        <div className="lg:hidden">
           <MobileNavbar />
         </div>
       </div>

@@ -25,20 +25,20 @@ const Stats = () => {
     },
   ];
   return (
-    <section className="pt-4 pb-12 xl:pt-0 xl:pb-12">
+    <section className="pt-4 pb-12 lg:pt-0 lg:pb-12">
       <div className="container mx-auto">
-        <div className="flex flex-wrap gap-2 sm:gap-6 max-w-[80vw] mx-auto xl-max-w-none">
+        <div className="flex flex-wrap gap-2 sm:gap-6 max-w-[80vw] mx-auto lg-max-w-none">
           {stats.map((item, index) => {
             return (
               <div
                 key={index}
-                className="flex flex-1 gap-1.5 sm:gap-4 items-center justify-center xl:justify-start"
+                className="flex flex-1 gap-1.5 sm:gap-4 items-center justify-center lg:justify-start"
               >
                 <CountUp
                   end={item.num}
                   duration={5}
                   delay={2}
-                  className="text-4xl xl:text-6xl font-extrabold"
+                  className="text-4xl lg:text-6xl font-extrabold"
                 />
                 <p
                   className={`${
