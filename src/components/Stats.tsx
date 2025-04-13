@@ -10,7 +10,7 @@ const Stats = () => {
     },
 
     {
-      num: 10,
+      num: 20,
       text: "Projects completed",
     },
 
