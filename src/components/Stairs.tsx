@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const stairAnimation = {
   initial: { top: "0%" },
@@ -12,9 +13,23 @@ const reverseIndex = (index: number) => {
 };
 
 const Stairs = () => {
+  const [stairCount, setStairCount] = useState(8);
+
+  useEffect(() => {
+    const updateStairCount = () => {
+      if (window.innerWidth <= 640) {
+        setStairCount(4);
+      } else {
+        setStairCount(8);
+      }
+    };
+
+    updateStairCount();
+  }, []);
+
   return (
     <>
-      {[...Array(10)].map((_, index) => {
+      {[...Array(stairCount)].map((_, index) => {
         return (
           <motion.div
             key={index}
