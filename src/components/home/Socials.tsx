@@ -10,7 +10,7 @@ const Social = () => {
             key={index}
             href={social.href}
             target="_blank"
-            className="w-10 h-10 border border-accent rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"
+            className="w-10 h-10 border border-gray-100 rounded-full flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"
           >
             {social.icon}
           </Link>

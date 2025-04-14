@@ -9,7 +9,7 @@ const Skills = () => {
           return (
             <div
               key={index}
-              className="flex flex-col gap-4 border-2 shadow-lg rounded-2xl p-4"
+              className="flex flex-col gap-6 border-2 shadow-lg rounded-2xl p-4"
             >
               <h3 className="text-3xl font-semibold text-center">
                 {item.subTitle}
