@@ -1,4 +1,3 @@
-import { Description } from "@radix-ui/react-dialog";
 import {
   FaCss3,
   FaHtml5,
