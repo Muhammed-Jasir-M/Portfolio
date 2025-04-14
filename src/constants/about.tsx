@@ -1,3 +1,4 @@
+import { Description } from "@radix-ui/react-dialog";
 import {
   FaCss3,
   FaHtml5,
@@ -167,6 +168,22 @@ export const education = {
       address: "Dammam, KSA",
       description:
         "I pursued my higher secondary education with a focus on Biology and Computer Science, building a strong academic foundation in both fields.",
+    },
+  ],
+};
+
+export const certificates = {
+  title: "Certificates",
+  items: [
+    {
+      image: "/assets/certificates/generative-ai-model.jpeg",
+      issuer: "NxtWave",
+      title: "Generative AI Model Workshop",
+    },
+    {
+      image: "/assets/certificates/linux-admin.png",
+      issuer: "IWCampus",
+      title: "Linux Admin Training",
     },
   ],
 };

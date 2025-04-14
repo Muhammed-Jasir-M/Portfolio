@@ -4,7 +4,9 @@ import { about } from "@/constants/about";
 const About = () => {
   return (
     <div className="container mx-auto">
-      <h2 className="text-5xl font-bold text-center pt-5">{about.title}</h2>
+      <h2 className="text-3xl md:text-5xl font-bold text-center pt-5">
+        {about.title}
+      </h2>
       <div className="flex flex-col lg:flex-row gap-5 lg:gap-16 justify-between items-center py-10 px-4">
         <div className="border-2 shadow-lg rounded-2xl bg-accent p-2.5 min-w-[252.5px] lg:max-w-[350px]">
           <Image
