@@ -1,30 +1,8 @@
 "use client";
 
+import { links } from "@/constants/navs";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-const links = [
-  {
-    name: "home",
-    path: "/",
-  },
-  {
-    name: "services",
-    path: "/services",
-  },
-  {
-    name: "about",
-    path: "/about",
-  },
-  {
-    name: "projects",
-    path: "/projects",
-  },
-  {
-    name: "contact",
-    path: "/contact",
-  },
-];
 
 const Navbar = () => {
   const pathname = usePathname();

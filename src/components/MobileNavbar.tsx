@@ -10,32 +10,11 @@ import {
 } from "./ui/sheet";
 import { CiMenuFries } from "react-icons/ci";
 import Link from "next/link";
-
-const links = [
-  {
-    name: "home",
-    path: "/",
-  },
-  {
-    name: "services",
-    path: "/services",
-  },
-  {
-    name: "about",
-    path: "/about",
-  },
-  {
-    name: "projects",
-    path: "/projects",
-  },
-  {
-    name: "contact",
-    path: "/contact",
-  },
-];
+import { links } from "@/constants/navs";
 
 const MobileNavbar = () => {
   const pathname = usePathname();
+
   return (
     <Sheet>
       <SheetTrigger className="flex justify-center items-center">

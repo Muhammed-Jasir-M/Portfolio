@@ -1,4 +1,3 @@
-import Image from "next/image";
 import {
   FaCss3,
   FaHtml5,
@@ -22,10 +21,12 @@ import {
   SiFigma,
   SiCanva,
   SiNetlify,
+  SiTailwindcss,
+  SiBootstrap,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
-const about = {
+export const about = {
   title: "About me",
   description:
     "I'm a passionate developer from Kerala, India, with a strong enthusiasm for building software and creating impactful solutions that make a difference. My expertise lies in Flutter, React, and MERN stack development, and I am always eager to learn and explore new technologies to enhance my skills.",
@@ -65,7 +66,7 @@ const about = {
   ],
 };
 
-const skills = {
+export const skills = {
   title: "My Skills",
   skillList: [
     {
@@ -89,6 +90,8 @@ const skills = {
         { name: "Node.js", icon: <FaNodeJs /> },
         { name: "Express.js", icon: <SiExpress /> },
         { name: "Flutter", icon: <FaFlutter /> },
+        { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+        { name: "Bootstrap", icon: <SiBootstrap /> },
       ],
     },
     {
@@ -114,79 +117,39 @@ const skills = {
   ],
 };
 
-const About = () => {
-  return (
-    <section>
-      <div className="container mx-auto">
-        <h2 className="text-5xl font-bold text-center pt-5">{about.title}</h2>
-        <div className="flex flex-col lg:flex-row gap-5 lg:gap-16 justify-between items-center py-10 px-4">
-          <div className="border-2 shadow-lg rounded-2xl bg-accent p-2.5 min-w-[252.5px] lg:max-w-[350px]">
-            <Image
-              src="/assets/image.png"
-              alt="Jasir"
-              className="rounded-xl object-cover"
-              width={250}
-              height={358}
-              priority
-              quality={100}
-            />
-          </div>
-
-          <div className="flex-1 flex flex-col gap-2.5">
-            <p className="text-white/60 text-center lg:text-left">
-              {about.description}
-            </p>
-            <ul className="grid grid-cols-1 lg:grid-cols-2 gap-2">
-              {about.info.map((item, index) => {
-                return (
-                  <li
-                    key={index}
-                    className="flex justify-center lg:justify-start gap-1.5"
-                  >
-                    <span className="text-white/60">{item.fieldName}:</span>
-                    <span className="text-white/80">{item.fieldValue}</span>
-                  </li>
-                );
-              })}
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div className="container mx-auto">
-        <h2 className="text-5xl font-bold text-center pt-5">{skills.title}</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 py-10 px-4">
-          {skills.skillList.map((item, index) => {
-            return (
-              <div
-                key={index}
-                className="flex flex-col gap-4 border-2 shadow-lg rounded-2xl p-4"
-              >
-                <h3 className="text-3xl font-semibold text-center">
-                  {item.subTitle}
-                </h3>
-                <div className="flex flex-wrap gap-6 justify-center">
-                  {item.skills.map((skill, index) => {
-                    return (
-                      <div
-                        key={index}
-                        className="flex flex-col items-center gap-1"
-                      >
-                        <span className="text-5xl text-accent">
-                          {skill.icon}
-                        </span>
-                        <span className="text-white/80">{skill.name}</span>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-    </section>
-  );
+export const experience = {
+  title: "My experience",
+  items: [
+    {
+      company: "Self-Employed",
+      companyLink: "/",
+      address: "Malappuram, Kerala",
+      duration: "2023 - Present",
+      position: "Software Developer",
+      description:
+        "I am currently working as a self-employed software developer, focusing on building web and mobile applications using the MERN stack and Flutter. I am also involved in various open-source projects.",
+    },
+  ],
 };
 
-export default About;
+export const education = {
+  title: "My education",
+  items: [
+    {
+      institution: "Nasra College of Arts & Science",
+      institutionLink: "",
+      duration: "2022 - 2025",
+      degree: "Bachelor of Computer Applications (BCA)",
+      description:
+        "I completed my Bachelor of Computer Applications (BCA) degree, gaining a strong foundation in computer science and software development.",
+    },
+    {
+      institution: "Cyra Learnings",
+      institutionLink: "",
+      duration: "2023 - 2025",
+      degree: "Flutter Development",
+      description:
+        "I completed a Flutter Development program, enhancing my skills in building cross-platform mobile applications.",
+    },
+  ],
+};
