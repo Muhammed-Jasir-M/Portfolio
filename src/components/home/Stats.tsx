@@ -1,29 +1,9 @@
 "use client";
 
+import { stats } from "@/constants/home";
 import CountUp from "react-countup";
 
 const Stats = () => {
-  const stats = [
-    {
-      num: 1,
-      text: "Years of experience",
-    },
-
-    {
-      num: 20,
-      text: "Projects completed",
-    },
-
-    {
-      num: 5,
-      text: "Technologies mastered",
-    },
-
-    {
-      num: 500,
-      text: "Code commits",
-    },
-  ];
   return (
     <section className="pt-4 pb-12 lg:pt-0 lg:pb-12">
       <div className="container mx-auto">
