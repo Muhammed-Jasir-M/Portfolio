@@ -35,13 +35,10 @@ export const about = {
       fieldName: "Name",
       fieldValue: "Muhammed Jasir M",
     },
+    { fieldName: "Age", fieldValue: "21" },
     {
-      fieldName: "Email",
-      fieldValue: "jasirmm307@gmail.com",
-    },
-    {
-      fieldName: "Phone",
-      fieldValue: "+91 95392 75280",
+      fieldName: "DOB",
+      fieldValue: "10th Feb 2004",
     },
     {
       fieldName: "Nationality",
@@ -51,6 +48,15 @@ export const about = {
       fieldName: "Place",
       fieldValue: "Malappuram, Kerala",
     },
+    {
+      fieldName: "Email",
+      fieldValue: "jasirmm307@gmail.com",
+    },
+    {
+      fieldName: "Phone",
+      fieldValue: "+91 95392 75280",
+    },
+
     {
       fieldName: "Languages",
       fieldValue: "English, Malayalam, Hindi",
@@ -90,7 +96,7 @@ export const skills = {
         { name: "Node.js", icon: <FaNodeJs /> },
         { name: "Express.js", icon: <SiExpress /> },
         { name: "Flutter", icon: <FaFlutter /> },
-        { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+        { name: "Tailwind.css", icon: <SiTailwindcss /> },
         { name: "Bootstrap", icon: <SiBootstrap /> },
       ],
     },
