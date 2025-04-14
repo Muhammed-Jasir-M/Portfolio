@@ -40,7 +40,7 @@ const Experience = () => {
                   viewport={{ once: false, amount: 0.3 }}
                   className="ml-16 md:ml-0 md:text-left"
                 >
-                  <h3 className="capitalize font-bold text-2xl">
+                  <h3 className="flex flex-col md:flex-row capitalize font-bold text-xl md:text-2xl">
                     {item.position}&nbsp;
                     <a
                       href={item.companyLink}
@@ -51,8 +51,12 @@ const Experience = () => {
                     </a>
                   </h3>
 
+                  <h4 className="capitalize font-medium text-white/80">
+                    {item.duration}
+                  </h4>
+
                   <p className="capitalize font-medium text-white/80">
-                    {item.duration} | {item.address}
+                    {item.address}
                   </p>
 
                   <p className="font-medium w-full text-white/60">

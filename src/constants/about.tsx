@@ -142,10 +142,11 @@ export const education = {
   title: "My education",
   items: [
     {
-      institution: "Nasra College of Arts & Science",
+      institution: "Nasra College of Arts & Science, Thirurkad",
       institutionLink: "",
       duration: "2022 - 2025",
       degree: "Bachelor of Computer Applications (BCA)",
+      address: "Malappuram, Kerala",
       description:
         "I completed my Bachelor of Computer Applications (BCA) degree, gaining a strong foundation in computer science and software development.",
     },
@@ -154,8 +155,18 @@ export const education = {
       institutionLink: "",
       duration: "2023 - 2025",
       degree: "Flutter Development",
+      address: "Malappuram, Kerala",
       description:
         "I completed a Flutter Development program, enhancing my skills in building cross-platform mobile applications.",
+    },
+    {
+      institution: "IISD",
+      institutionLink: "",
+      duration: "2020 - 2022",
+      degree: "11th & 12th Std (Bio-Computer)",
+      address: "Dammam, KSA",
+      description:
+        "I pursued my higher secondary education with a focus on Biology and Computer Science, building a strong academic foundation in both fields.",
     },
   ],
 };
