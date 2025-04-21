@@ -1,8 +1,9 @@
-
 const Contact = () => {
   return (
-    <div>Contact</div>
-  )
-}
+    <div className="container mx-auto">
+      <div>Contacts</div>
+    </div>
+  );
+};
 
-export default Contact
+export default Contact;

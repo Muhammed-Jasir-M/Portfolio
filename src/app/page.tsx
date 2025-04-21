@@ -2,6 +2,7 @@ import Photo from "@/components/home/Photo";
 import Social from "@/components/home/Socials";
 import Stats from "@/components/home/Stats";
 import { Button } from "@/components/ui/button";
+import { home } from "@/constants/home";
 import { FiDownload } from "react-icons/fi";
 
 export default function Home() {
@@ -13,16 +14,13 @@ export default function Home() {
             <div className="text-center lg:text-left order-2 lg:order-none">
               <h1 className="text-xl lg:text-2xl mb-2 lg:mb-0">
                 Hello, I&apos;m <br />
-                <span className="h2 text-accent">Muhammed Jasir M</span>
+                <span className="h2 text-accent">{home.name}</span>
               </h1>
 
-              <span className="text-xl">Software Developer</span>
+              <span className="text-xl">{home.job}</span>
 
               <p className="max-w-[500px] mb-4 mt-4 lg:mt-2.5 text-white/80">
-                I&apos;m a software developer based in Kerala, India. I have a
-                passion for software development and love to create things that
-                make a difference. I specialize in Flutter, React, and MERN
-                stack development.
+                {home.description}
               </p>
 
               <div className="flex flex-col lg:flex-row items-center gap-8 ">

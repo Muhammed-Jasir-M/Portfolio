@@ -1,8 +1,9 @@
-
 const Projects = () => {
   return (
-    <div>Projects</div>
-  )
-}
+    <div className="container mx-auto">
+      <div>Projects</div>
+    </div>
+  );
+};
 
-export default Projects
+export default Projects;

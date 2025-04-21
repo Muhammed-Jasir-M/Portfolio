@@ -1,5 +1,12 @@
 import { FaGithub, FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa";
 
+export const home = {
+  name: "Muhammed Jasir M",
+  job: "Software Developer",
+  description:
+    "I'm a software developer based in Kerala, India. I have a passion for software development and love to create things that make a difference. I specialize in Flutter, React, and MERN Stack development.",
+};
+
 export const socials = [
   { icon: <FaGithub />, href: "https://github.com/Muhammed-Jasir-M" },
   {
