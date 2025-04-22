@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Certificates = () => {
   return (
-    <div className="container mx-auto mb-5">
+    <div className="container mx-auto mb-5" id="certificates">
       <h2 className="text-3xl md:text-5xl font-bold text-center pt-5">
         {certificates.title}
       </h2>

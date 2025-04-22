@@ -13,7 +13,7 @@ const Experience = () => {
   });
 
   return (
-    <div className="container mx-auto my-10">
+    <div className="container mx-auto my-10" id="experience">
       <h2 className="text-3xl md:text-5xl font-bold text-center pt-5 mb-10">
         {experience.title}
       </h2>

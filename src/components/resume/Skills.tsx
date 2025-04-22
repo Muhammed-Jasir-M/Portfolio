@@ -2,7 +2,7 @@ import { skills } from "@/constants/about";
 
 const Skills = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto" id="skills">
       <h2 className="text-3xl md:text-5xl font-bold text-center pt-5">
         {skills.title}
       </h2>
