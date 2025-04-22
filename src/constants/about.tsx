@@ -182,7 +182,7 @@ export const certificates = {
     {
       image: "/assets/certificates/linux-admin.png",
       issuer: "IWCampus",
-      title: "Linux Admin Training",
+      title: "Linux Administrator Training",
     },
   ],
 };
