@@ -2,7 +2,7 @@ export const services = [
   {
     num: "01",
     title: "Web Development",
-    value: "web-dev",
+    value: "web-development",
     description:
       "Building modern, responsive, and high-performance websites tailored to your needs.",
     href: "",
@@ -10,7 +10,7 @@ export const services = [
   {
     num: "02",
     title: "Mobile App Development",
-    value: "mobile-dev",
+    value: "mobile-app-development",
     description:
       "Creating seamless and feature-rich mobile applications for iOS and Android platforms.",
     href: "",
