@@ -18,7 +18,7 @@ const MobileNavbar = () => {
   return (
     <Sheet>
       <SheetTrigger className="flex justify-center items-center">
-        <CiMenuFries className="text-[32px] text-accent cursor-pointer" />
+        <CiMenuFries className="text-[36px] text-accent cursor-pointer" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         <div className="text-3xl font-semibold mb-8">

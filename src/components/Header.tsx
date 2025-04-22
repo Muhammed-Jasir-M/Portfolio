@@ -20,7 +20,16 @@ const Header = () => {
           </Link>
         </div>
 
-        <div className="lg:hidden">
+        <div className="lg:hidden flex gap-3">
+          <Link href={"/contact"}>
+            <Button
+              size="sm"
+              variant={"outline"}
+              className="px-4 py-2 rounded-xl"
+            >
+              Hire me
+            </Button>
+          </Link>
           <MobileNavbar />
         </div>
       </div>
