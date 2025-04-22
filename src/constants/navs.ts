@@ -24,38 +24,38 @@ export const links = [
 export const footerLinks = [
   {
     name: "home",
-    href: "/",
+    path: "/",
   },
   {
     name: "services",
-    href: "/services",
+    path: "/services",
   },
   {
     name: "projects",
-    href: "/projects",
+    path: "/projects",
   },
   {
     name: "contact",
-    href: "/contact",
+    path: "/contact",
   },
   {
     name: "about me",
-    href: "/resume#about",
+    path: "/resume#about",
   },
   {
     name: "skills",
-    href: "/resume#skills",
+    path: "/resume#skills",
   },
   {
     name: "experience",
-    href: "/resume#experience",
+    path: "/resume#experience",
   },
   {
     name: "education",
-    href: "/resume#education",
+    path: "/resume#education",
   },
   {
     name: "certificates",
-    href: "/resume#certificates",
+    path: "/resume#certificates",
   },
 ];

@@ -14,9 +14,9 @@ const Footer = () => {
           {footerLinks.map((link, index) => (
             <Link
               key={index}
-              href={link.href}
+              href={link.path}
               className={`${
-                pathname === link.href
+                pathname === link.path
                   ? "text-accent border-b-2 border-accent"
                   : "text-white/60 hover:border-b border-accent"
               } text-sm md:text-base lg:text-lg font-bold hover:text-accent-foreground capitalize cursor-pointer transition-all`}
