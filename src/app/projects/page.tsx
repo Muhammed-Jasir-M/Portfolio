@@ -72,11 +72,7 @@ const Projects = () => {
 
               <div className="flex justify-between mt-6">
                 <div className="flex gap-4">
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    className="text-blue-600 hover:underline"
-                  >
+                  <a href={project.liveUrl} target="_blank">
                     <TooltipProvider delayDuration={100}>
                       <Tooltip>
                         <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -88,11 +84,8 @@ const Projects = () => {
                       </Tooltip>
                     </TooltipProvider>
                   </a>
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    className="text-blue-600 hover:underline"
-                  >
+
+                  <a href={project.githubUrl} target="_blank">
                     <TooltipProvider delayDuration={100}>
                       <Tooltip>
                         <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -105,6 +98,7 @@ const Projects = () => {
                     </TooltipProvider>
                   </a>
                 </div>
+
                 <Link
                   href=""
                   className="w-[50px] h-[50px] rounded-full bg-accent group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"

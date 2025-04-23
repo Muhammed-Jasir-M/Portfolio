@@ -14,7 +14,7 @@ const Education = () => {
 
   return (
     <div className="container mx-auto my-10" id="education">
-      <h2 className="text-3xl md:text-5xl font-bold text-center pt-5 mb-10">
+      <h2 className="capitalize text-3xl md:text-5xl font-bold text-center pt-5 mb-10">
         {education.title}
       </h2>
       <div

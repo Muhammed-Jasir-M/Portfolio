@@ -3,10 +3,10 @@ import { skills } from "@/constants/about";
 const Skills = () => {
   return (
     <div className="container mx-auto" id="skills">
-      <h2 className="text-3xl md:text-5xl font-bold text-center pt-5">
+      <h2 className="capitalize text-3xl md:text-5xl font-bold text-center pt-5">
         {skills.title}
       </h2>
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 py-10 px-4">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 py-8 px-4">
         {skills.skillList.map((item, index) => {
           return (
             <div

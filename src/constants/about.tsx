@@ -27,7 +27,9 @@ import {
 import { VscVscode } from "react-icons/vsc";
 
 export const about = {
-  title: "About me",
+  title: "about me",
+  name: "Muhammed Jasir M",
+  image: "/assets/image.png",
   description:
     "I'm a passionate developer from Kerala, India, with a strong enthusiasm for building software and creating impactful solutions that make a difference. My expertise lies in Flutter, React, and MERN stack development, and I am always eager to learn and explore new technologies to enhance my skills.",
   info: [
@@ -56,7 +58,6 @@ export const about = {
       fieldName: "Phone",
       fieldValue: "+91 95392 75280",
     },
-
     {
       fieldName: "Languages",
       fieldValue: "English, Malayalam, Hindi",
@@ -73,7 +74,7 @@ export const about = {
 };
 
 export const skills = {
-  title: "My Skills",
+  title: "my skills",
   skillList: [
     {
       subTitle: "Programming Languages",
