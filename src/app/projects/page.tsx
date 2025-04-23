@@ -25,28 +25,31 @@ const MotionCard = motion(Card);
 const Projects = () => {
   return (
     <motion.section
-      className="container mx-auto py-12 px-2.5 lg:px-4 min-h-[80vh]"
+      className="container mx-auto py-12 mb-3 px-3 lg:px-4 min-h-[80vh]"
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
+      animate={{
+        opacity: 1,
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+      }}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project) => (
           <MotionCard
-  key={project.id}
-  whileHover={{ scale: 1.03 }}
-  whileTap={{ scale: 0.98 }}
-  transition={{ type: "spring" }}
-  className="hover:shadow-xl transition duration-300"
->
-	<a href={project.image} target="_blank" rel="noopener noreferrer">
-            <Image
-              src={project.image}
-              alt={project.title}
-              className="rounded-lg object-cover w-full"
-              width={500}
-              height={192}
-            />
-</a>
+            key={project.id}
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.98 }}
+            transition={{ type: "spring" }}
+            className="hover:shadow-xl transition duration-300"
+          >
+            <a href={project.image} target="_blank" rel="noopener noreferrer">
+              <Image
+                src={project.image}
+                alt={project.title}
+                className="rounded-lg object-cover w-full"
+                width={500}
+                height={192}
+              />
+            </a>
             <CardContent className="">
               <CardTitle className="text-xl lg:text-2xl font-bold text-center text-accent mb-1.5">
                 {project.title}
@@ -106,7 +109,16 @@ const Projects = () => {
                   href=""
                   className="w-[50px] h-[50px] rounded-full bg-accent group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
                 >
-                  <BsArrowDownRight className="text-primary text-2xl" />
+                  <TooltipProvider delayDuration={100}>
+                    <Tooltip>
+                      <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-white/5 flex justify-center items-center group">
+                        <BsArrowDownRight className="text-primary text-2xl" />
+                      </TooltipTrigger>
+                      <TooltipContent>
+                        <p>View more</p>
+                      </TooltipContent>
+                    </Tooltip>
+                  </TooltipProvider>
                 </Link>
               </div>
             </CardContent>

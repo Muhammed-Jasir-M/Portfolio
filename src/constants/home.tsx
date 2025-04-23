@@ -5,6 +5,8 @@ export const home = {
   job: "Software Developer",
   description:
     "I'm a software developer based in Kerala, India. I have a passion for software development and love to create things that make a difference. I specialize in Flutter, React, and MERN Stack development.",
+  image: "/assets/hi.png",
+  resume: "",
 };
 
 export const socials = [

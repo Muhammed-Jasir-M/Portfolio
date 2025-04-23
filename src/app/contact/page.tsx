@@ -41,7 +41,7 @@ const Contact = () => {
               ))}
             </ul>
 
-            <Social />
+            <Social isSquare />
           </div>
         </div>
       </div>

@@ -19,7 +19,7 @@ const Footer = () => {
                 pathname === link.path
                   ? "text-accent border-b-2 border-accent"
                   : "text-white/60 hover:border-b border-accent"
-              } text-sm md:text-base lg:text-lg font-bold hover:text-accent-foreground capitalize cursor-pointer transition-all`}
+              } text-base font-medium lg:text-lg lg:font-bold hover:text-accent-foreground capitalize cursor-pointer transition-all`}
             >
               {link.name}
             </Link>

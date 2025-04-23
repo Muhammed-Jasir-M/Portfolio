@@ -4,16 +4,22 @@ import { BsArrowDownRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { services } from "@/constants/services";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+} from "@/components/ui/tooltip";
+import { TooltipTrigger } from "@radix-ui/react-tooltip";
 
 const Services = () => {
   return (
-    <section className="min-h-[80vh] flex flex-col justify-center px-4 py-8">
+    <section className="flex flex-col justify-center px-4 py-8">
       <div className="container mx-auto">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
-            transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+            transition: { delay: 2.0, duration: 0.4, ease: "easeIn" },
           }}
           className="grid grid-cols-1 md:grid-cols-2 gap-8"
         >
@@ -31,7 +37,16 @@ const Services = () => {
                     href={service.href}
                     className="w-[60px] h-[60px] rounded-full bg-accent-foreground group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
                   >
-                    <BsArrowDownRight className="text-primary text-3xl" />
+                    <TooltipProvider delayDuration={100}>
+                      <Tooltip>
+                        <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-white/5 flex justify-center items-center group">
+                          <BsArrowDownRight className="text-primary text-3xl" />
+                        </TooltipTrigger>
+                        <TooltipContent>
+                          <p>View more</p>
+                        </TooltipContent>
+                      </Tooltip>
+                    </TooltipProvider>
                   </Link>
                 </div>
                 <h2 className="text-3xl lg:text-4xl font-bold text-accent lg:text-white group-hover:text-accent transition-all duration-500">

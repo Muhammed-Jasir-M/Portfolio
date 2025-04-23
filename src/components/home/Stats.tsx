@@ -21,6 +21,7 @@ const Stats = () => {
                   suffix={"+"}
                   className="text-4xl lg:text-6xl font-extrabold font-mono"
                 />
+
                 <p
                   className={`${
                     item.text.length < 15 ? "max-w-[100px]" : "max-w-[150px]"
