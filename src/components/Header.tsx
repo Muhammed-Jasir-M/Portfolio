@@ -15,13 +15,13 @@ const Header = () => {
 
         <div className="hidden lg:flex items-center gap-8">
           <Navbar />
-          <Link href={"/contact"}>
+          <Link href={"mailto:jasirmm307@gmail.com"}>
             <Button variant={"outline"}>Hire me</Button>
           </Link>
         </div>
 
         <div className="lg:hidden flex gap-3">
-          <Link href={"/contact"}>
+          <Link href={"mailto:jasirmm307@gmail.com"}>
             <Button
               size="sm"
               variant={"outline"}
