@@ -32,12 +32,12 @@ const Projects = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project) => (
           <MotionCard
-            key={project.id}
-	    whileHover={{scale:1.03}}
-	    whitetap={{scale:0.98}}
-	    transition={{type:"sprint", stiffness:300}}
-            className="hover:shadow-xl transition duration-300"
-          >
+  key={project.id}
+  whileHover={{ scale: 1.03 }}
+  whileTap={{ scale: 0.98 }}
+  transition={{ type: "spring" }}
+  className="hover:shadow-xl transition duration-300"
+>
 	<a href={project.image} target="_blank" rel="noopener noreferrer">
             <Image
               src={project.image}
