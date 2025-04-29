@@ -45,9 +45,9 @@ const Projects = () => {
               <Image
                 src={project.image}
                 alt={project.title}
-                className="rounded-lg object-cover w-full"
+                className="rounded-lg object-cover w-full "
                 width={500}
-                height={192}
+                height={220}
               />
             </a>
             <CardContent className="">
