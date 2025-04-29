@@ -54,20 +54,15 @@ const Projects = () => {
           >
             <a href={project.image} target="_blank" rel="noopener noreferrer">
               <div className="overflow-hidden rounded-t-lg">
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.4 }}
-                >
-                  <Image
-                    src={project.image}
-                    alt={project.title}
-                    className="rounded-t-lg object-cover w-full h-[200px]"
-                    width={300}
-                    height={200}
-                    quality={100}
-                    priority
-                  />
-                </motion.div>
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  className="rounded-t-lg object-cover w-full h-[200px]"
+                  width={300}
+                  height={200}
+                  quality={100}
+                  priority
+                />
               </div>
             </a>
             <CardContent className="">
@@ -79,19 +74,14 @@ const Projects = () => {
                 {project.description}
               </CardDescription>
 
-              <div className="flex flex-wrap gap-2 mt-2 mb-1.5 justify-center h-[48px] overflow-hidden">
+              <div className="flex flex-wrap gap-2 mt-2 mb-1.5 justify-center items-start h-[58px] overflow-hidden">
                 {project.skills.map((skill, index) => (
-                  <motion.span
+                  <span
                     key={index}
-                    initial={{ opacity: 0 }}
-                    animate={{
-                      opacity: 1,
-                      transition: { delay: 0.3 + index * 0.05 },
-                    }}
-                    className="line-clamp-1 text-sm bg-gray-200 text-gray-800 px-2 py-1 rounded"
+                    className="text-sm bg-gray-200 text-gray-800 px-2 py-1 rounded line-clamp-1 overflow-hidden"
                   >
                     {skill}
-                  </motion.span>
+                  </span>
                 ))}
               </div>
 
@@ -148,7 +138,7 @@ const Projects = () => {
                 <Link href="">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
-                      <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-white/5 flex justify-center items-center group">
+                      <TooltipTrigger className="w-[50px] h-[50px] rounded-full flex justify-center items-center bg-accent-foreground group-hover:bg-accent transition-all duration-500 hover:-rotate-45 ">
                         <BsArrowDownRight className="text-primary text-2xl" />
                       </TooltipTrigger>
                       <TooltipContent>
