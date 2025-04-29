@@ -12,12 +12,12 @@ const Certificates = () => {
           return (
             <div
               key={index}
-              className="flex flex-col items-center gap-4 border-2 px-4 py-4 md:py-8 rounded-2xl"
+              className="flex flex-col items-center gap-4 border-2 px-4 py-4 md:py-8 rounded-2xl transform transition duration-300 hover:scale-105 hover:shadow-lg"
             >
               <a href={item.image} target="_blank" rel="noopener noreferrer">
                 <Image
                   src={item.image}
-                  alt="certificate"
+                  alt={item.title}
                   width={300}
                   height={200}
                   quality={100}
@@ -31,7 +31,7 @@ const Certificates = () => {
               <h5 className="text-xl font-semibold text-center">
                 {item.issuer}
               </h5>
-              <p className="text-center text-sm md:text-base">
+              <p className="text-center font-medium text-white/60">
                 {item.description}
               </p>
             </div>
