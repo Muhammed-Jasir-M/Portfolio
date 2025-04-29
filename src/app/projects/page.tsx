@@ -74,7 +74,7 @@ const Projects = () => {
                 {project.description}
               </CardDescription>
 
-              <div className="flex flex-wrap gap-2 mt-2 mb-1.5 justify-center items-start h-[58px] overflow-hidden">
+              <div className="flex flex-wrap gap-2 mt-2 mb-1.5 justify-center items-start h-[61px] overflow-hidden">
                 {project.skills.map((skill, index) => (
                   <span
                     key={index}
