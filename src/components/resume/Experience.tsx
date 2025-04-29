@@ -1,6 +1,6 @@
 "use client";
 
-import { experience } from "@/constants/about";
+import { experience } from "@/constants/resume";
 import { motion, useScroll } from "framer-motion";
 import { useRef } from "react";
 import CircleIcon from "./CircleIcon";

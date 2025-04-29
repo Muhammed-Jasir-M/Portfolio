@@ -1,4 +1,4 @@
-import { certificates } from "@/constants/about";
+import { certificates } from "@/constants/resume";
 import Image from "next/image";
 
 const Certificates = () => {
@@ -31,6 +31,9 @@ const Certificates = () => {
               <h5 className="text-xl font-semibold text-center">
                 {item.issuer}
               </h5>
+              <p className="text-center text-sm md:text-base">
+                {item.description}
+              </p>
             </div>
           );
         })}

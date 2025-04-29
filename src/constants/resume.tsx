@@ -23,6 +23,7 @@ import {
   SiNetlify,
   SiTailwindcss,
   SiBootstrap,
+  SiRender,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
@@ -96,9 +97,16 @@ export const skills = {
         { name: "Next.js", icon: <SiNextdotjs /> },
         { name: "Node.js", icon: <FaNodeJs /> },
         { name: "Express.js", icon: <SiExpress /> },
-        { name: "Flutter", icon: <FaFlutter /> },
-        { name: "Tailwind.css", icon: <SiTailwindcss /> },
+        { name: "Tailwind CSS", icon: <SiTailwindcss /> },
         { name: "Bootstrap", icon: <SiBootstrap /> },
+        { name: "Flutter", icon: <FaFlutter /> },
+      ],
+    },
+    {
+      subTitle: "State Management",
+      skills: [
+        { name: "GetX (Flutter)", icon: <FaFlutter /> },
+        { name: "BLoC (Flutter)", icon: <FaFlutter /> },
       ],
     },
     {
@@ -119,6 +127,7 @@ export const skills = {
         { name: "Netlify", icon: <SiNetlify /> },
         { name: "Figma", icon: <SiFigma /> },
         { name: "Canva", icon: <SiCanva /> },
+        { name: "Render", icon: <SiRender /> },
       ],
     },
   ],
@@ -128,13 +137,13 @@ export const experience = {
   title: "My experience",
   items: [
     {
-      company: "Self-Employed",
+      company: "Personal Projects",
       companyLink: "/",
       address: "Malappuram, Kerala",
-      duration: "2023 - Present",
-      position: "Software Developer",
+      duration: "2022 - Present",
+      position: "Self-Taught Developer",
       description:
-        "I am currently working as a self-employed software developer, focusing on building web and mobile applications using the MERN stack and Flutter. I am also involved in various open-source projects.",
+        "I have been actively building personal projects to enhance my skills in web and mobile development. These projects include creating responsive websites, mobile applications using Flutter, and full-stack applications using the MERN stack. Through these projects, I have gained hands-on experience in problem-solving, debugging, and implementing modern technologies.",
     },
   ],
 };
@@ -179,11 +188,15 @@ export const certificates = {
       image: "/assets/certificates/generative-ai-model.jpeg",
       issuer: "NxtWave",
       title: "Generative AI Model Workshop",
+      description:
+        "Attended a workshop on Generative AI, where I gained hands-on experience in creating AI models.",
     },
     {
       image: "/assets/certificates/linux-admin.png",
       issuer: "IWCampus",
       title: "Linux Administrator Training",
+      description:
+        "Completed training on Linux administration, covering essential system management and networking concepts.",
     },
   ],
 };

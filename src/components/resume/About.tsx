@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { about } from "@/constants/about";
+import { about } from "@/constants/resume";
 
 const About = () => {
   return (

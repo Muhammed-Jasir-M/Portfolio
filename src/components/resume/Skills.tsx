@@ -1,4 +1,4 @@
-import { skills } from "@/constants/about";
+import { skills } from "@/constants/resume";
 
 const Skills = () => {
   return (
