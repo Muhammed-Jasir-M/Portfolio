@@ -25,13 +25,13 @@ const Certificates = () => {
                   className="bg-white/60 rounded-xl object-cover"
                 />
               </a>
-              <h2 className="text-accent text-2xl font-bold text-center">
+              <h2 className="text-accent text-xl lg:text-2xl font-bold text-center line-clamp-2">
                 {item.title}
               </h2>
-              <h5 className="text-xl font-semibold text-center">
+              <h5 className="text-lg lg:text-xl font-semibold text-center">
                 {item.issuer}
               </h5>
-              <p className="text-center font-medium text-white/60">
+              <p className="text-center font-medium text-white/60 text-base">
                 {item.description}
               </p>
             </div>

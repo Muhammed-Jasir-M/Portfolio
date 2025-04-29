@@ -29,35 +29,46 @@ const Projects = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { delay: 0.4, duration: 0.8, ease: "easeInOut" },
+        transition: { delay: 1, duration: 0.8, ease: "easeOut" },
       }}
     >
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects.map((project) => (
+        {projects.map((project, index) => (
           <MotionCard
             key={project.id}
-            whileHover={{
-              scale: 1.05,
-              rotate: 1,
-              boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.2)",
+            initial={{ opacity: 0, y: 20 }}
+            animate={{
+              opacity: 1,
+              y: 0,
+              transition: {
+                duration: 0.5,
+                delay: index * 0.1,
+              },
             }}
-            whileTap={{ scale: 0.98 }}
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ type: "spring", stiffness: 100, damping: 10 }}
-            viewport={{ once: true, amount: 0.3 }}
-            className="hover:shadow-xl transition duration-300"
+            whileHover={{
+              y: -8,
+              boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.1)",
+              transition: { duration: 0.3 },
+            }}
+            className="bg-gradient-to-br from-primary-foreground to-primary-foreground/95 backdrop-blur-sm transition-all duration-300"
           >
             <a href={project.image} target="_blank" rel="noopener noreferrer">
-              <Image
-                src={project.image}
-                alt={project.title}
-                className="rounded-lg object-cover w-full h-[200px]"
-                width={300}
-                height={200}
-                quality={100}
-                priority
-              />
+              <div className="overflow-hidden rounded-t-lg">
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  transition={{ duration: 0.4 }}
+                >
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    className="rounded-t-lg object-cover w-full h-[200px]"
+                    width={300}
+                    height={200}
+                    quality={100}
+                    priority
+                  />
+                </motion.div>
+              </div>
             </a>
             <CardContent className="">
               <CardTitle className="text-xl lg:text-2xl font-bold text-center text-accent mb-1.5">
@@ -68,14 +79,19 @@ const Projects = () => {
                 {project.description}
               </CardDescription>
 
-              <div className="flex flex-wrap gap-2 mt-2 mb-1.5 justify-center">
-                {project.skills.map((skill: string, index: number) => (
-                  <span
+              <div className="flex flex-wrap gap-2 mt-2 mb-1.5 justify-center h-[48px] overflow-hidden">
+                {project.skills.map((skill, index) => (
+                  <motion.span
                     key={index}
+                    initial={{ opacity: 0 }}
+                    animate={{
+                      opacity: 1,
+                      transition: { delay: 0.3 + index * 0.05 },
+                    }}
                     className="line-clamp-1 text-sm bg-gray-200 text-gray-800 px-2 py-1 rounded"
                   >
                     {skill}
-                  </span>
+                  </motion.span>
                 ))}
               </div>
 
@@ -106,48 +122,30 @@ const Projects = () => {
                   <a href={project.githubUrl} target="_blank">
                     <TooltipProvider delayDuration={100}>
                       <Tooltip>
-                        <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-white/5 flex justify-center items-center group">
-                          <FaGithub className="text-white text-2xl group-hover:text-accent" />
-                        </TooltipTrigger>
-                        <TooltipContent>
-                          <p>Github repo</p>
-                        </TooltipContent>
-                      </Tooltip>
-                    </TooltipProvider>
-                  </a>
-
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    className={
-                      project.repoType ? "pointer-events-none opacity-50" : ""
-                    }
-                  >
-                    <TooltipProvider delayDuration={100}>
-                      <Tooltip>
                         <TooltipTrigger
                           className={`w-[50px] h-[50px] rounded-full bg-white/5 flex justify-center items-center group ${
-                            project.repoType
-                              ? "pointer-events-none opacity-50"
-                              : ""
+                            project.repoType == "private" ? "opacity-50" : ""
                           }`}
                         >
-                          <FaGithub className="text-white text-2xl group-hover:text-accent" />
+                          <FaGithub
+                            className={`text-2xl ${
+                              project.repoType == "private"
+                                ? "text-white/50"
+                                : "text-white group-hover:text-accent"
+                            }`}
+                          />
                         </TooltipTrigger>
                         <TooltipContent>
-                          <p>
-                            {project.repoType ? "Private repo" : "Github repo"}
-                          </p>
+                          {project.repoType == "private"
+                            ? "Private repo"
+                            : "Github repo"}
                         </TooltipContent>
                       </Tooltip>
                     </TooltipProvider>
                   </a>
                 </div>
 
-                <Link
-                  href=""
-                  className="w-[50px] h-[50px] rounded-full bg-accent group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
-                >
+                <Link href="">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[50px] h-[50px] rounded-full bg-white/5 flex justify-center items-center group">
