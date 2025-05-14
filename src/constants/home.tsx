@@ -2,9 +2,9 @@ import { FaGithub, FaLinkedinIn, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export const home = {
   name: "Muhammed Jasir M",
-  job: "Software Developer",
+  job: "Full Stack Developer",
   description:
-    "I'm a software developer based in Kerala, India. I have a passion for software development and love to create things that make a difference. I specialize in Flutter, React, and MERN Stack development.",
+    "I'm a passionate full-stack developer from Kerala, India, specializing in building innovative digital solutions. With expertise in Flutter, React, and MERN Stack, I craft seamless web and mobile experiences that solve real-world problems efficiently.",
   image: "/assets/hi.png",
   resume: "",
 };
@@ -21,12 +21,12 @@ export const socials = [
 
 export const stats = [
   {
-    num: 2,
+    num: 1,
     text: "Years of experience",
   },
 
   {
-    num: 20,
+    num: 16,
     text: "Projects completed",
   },
 
@@ -36,7 +36,7 @@ export const stats = [
   },
 
   {
-    num: 500,
+    num: 600,
     text: "Code commits",
   },
 ];

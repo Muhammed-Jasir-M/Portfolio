@@ -32,7 +32,7 @@ export const about = {
   name: "Muhammed Jasir M",
   image: "/assets/image.png",
   description:
-    "I'm a passionate developer from Kerala, India, with a strong enthusiasm for building software and creating impactful solutions that make a difference. My expertise lies in Flutter, React, and MERN stack development, and I am always eager to learn and explore new technologies to enhance my skills.",
+    "I’m a passionate and self-driven developer from Kerala, India, with a deep interest in building impactful digital solutions. I specialize in Flutter, React, and MERN stack development, and I'm constantly exploring new technologies to grow as a full-stack and cross-platform developer. My journey in tech is fueled by curiosity, creativity, and a desire to solve real-world problems through code.",
   info: [
     {
       fieldName: "Name",
@@ -80,8 +80,6 @@ export const skills = {
     {
       subTitle: "Programming Languages",
       skills: [
-        { name: "HTML", icon: <FaHtml5 /> },
-        { name: "CSS", icon: <FaCss3 /> },
         { name: "Dart", icon: <FaDartLang /> },
         { name: "C", icon: <FaC /> },
         { name: "Java", icon: <FaJava /> },
@@ -91,30 +89,32 @@ export const skills = {
       ],
     },
     {
-      subTitle: "Frameworks & Libraries",
+      subTitle: "Frontend Development",
       skills: [
         { name: "React.js", icon: <FaReact /> },
         { name: "Next.js", icon: <SiNextdotjs /> },
-        { name: "Node.js", icon: <FaNodeJs /> },
-        { name: "Express.js", icon: <SiExpress /> },
+        { name: "HTML5", icon: <FaHtml5 /> },
+        { name: "CSS3", icon: <FaCss3 /> },
         { name: "Tailwind CSS", icon: <SiTailwindcss /> },
         { name: "Bootstrap", icon: <SiBootstrap /> },
+      ],
+    },
+    {
+      subTitle: "Mobile & Cross-Platform",
+      skills: [
         { name: "Flutter", icon: <FaFlutter /> },
+        { name: "GetX", icon: <FaFlutter /> },
+        { name: "BLoC", icon: <FaFlutter /> },
       ],
     },
     {
-      subTitle: "State Management",
+      subTitle: "Backend & Databases",
       skills: [
-        { name: "GetX (Flutter)", icon: <FaFlutter /> },
-        { name: "BLoC (Flutter)", icon: <FaFlutter /> },
-      ],
-    },
-    {
-      subTitle: "Databases",
-      skills: [
+        { name: "Node.js", icon: <FaNodeJs /> },
+        { name: "Express.js", icon: <SiExpress /> },
         { name: "MongoDB", icon: <SiMongodb /> },
-        { name: "Firebase", icon: <SiFirebase /> },
         { name: "PostgreSQL", icon: <SiPostgresql /> },
+        { name: "Firebase", icon: <SiFirebase /> },
       ],
     },
     {
@@ -138,12 +138,12 @@ export const experience = {
   items: [
     {
       company: "Personal Projects",
-      companyLink: "/",
+      companyLink: "/resume#projects",
       address: "Malappuram, Kerala",
       duration: "2022 - Present",
       position: "Self-Taught Developer",
       description:
-        "I have been actively building personal projects to enhance my skills in web and mobile development. These projects include creating responsive websites, mobile applications using Flutter, and full-stack applications using the MERN stack. Through these projects, I have gained hands-on experience in problem-solving, debugging, and implementing modern technologies.",
+        "As a self-taught developer, I’ve built a variety of personal projects that showcase my capabilities in both web and mobile development. These include responsive websites, mobile apps using Flutter, and full-stack solutions with the MERN stack. These hands-on experiences have honed my skills in debugging, problem-solving, and deploying real-world applications.",
     },
   ],
 };
@@ -152,32 +152,32 @@ export const education = {
   title: "My education",
   items: [
     {
-      institution: "Nasra College of Arts & Science, Thirurkad",
-      institutionLink: "",
+      institution: "Nasra College of Arts & Science",
+      institutionLink: "https://www.nasracollege.com/",
       duration: "2022 - 2025",
       degree: "Bachelor of Computer Applications (BCA)",
       address: "Malappuram, Kerala",
       description:
-        "I completed my Bachelor of Computer Applications (BCA) degree, gaining a strong foundation in computer science and software development.",
+        "Recently completed BCA, where I’ve built a strong foundation in computer science, data structures, and software engineering practices.",
     },
     {
       institution: "Cyra Learnings",
-      institutionLink: "",
-      duration: "2023 - 2025",
-      degree: "Flutter Development",
+      institutionLink: "https://cyralearnings.com/",
+      duration: "2023 - 2024",
+      degree: "Flutter Development Program",
       address: "Malappuram, Kerala",
       description:
-        "I completed a Flutter Development program, enhancing my skills in building cross-platform mobile applications.",
+        "Completed a Flutter Development program, enhancing my skills in building cross-platform mobile applications.",
     },
-    {
-      institution: "IISD",
-      institutionLink: "",
-      duration: "2020 - 2022",
-      degree: "11th & 12th Std (Bio-Computer)",
-      address: "Dammam, KSA",
-      description:
-        "I pursued my higher secondary education with a focus on Biology and Computer Science, building a strong academic foundation in both fields.",
-    },
+    // {
+    //   institution: "IISD",
+    //   institutionLink: "https://iisdammam.edu.sa/",
+    //   duration: "2020 - 2022",
+    //   degree: "Higher Secondary (Bio-Computer)",
+    //   address: "Dammam, KSA",
+    //   description:
+    //     "Completed higher secondary education with a focus on Biology and Computer Science, fostering analytical and technical skills.",
+    // },
   ],
 };
 
@@ -185,18 +185,32 @@ export const certificates = {
   title: "Certificates",
   items: [
     {
-      image: "/assets/certificates/generative-ai-model.jpeg",
-      issuer: "NxtWave",
-      title: "Generative AI Model Workshop",
+      image: "/assets/certificates/cyralearnings.png",
+      issuer: "Cyra Learnings",
+      title: "Flutter Development Program",
       description:
-        "Attended a workshop on Generative AI, where I gained hands-on experience in creating AI models.",
+        "Successfully completed a Flutter development program, acquiring in-depth knowledge of building cross-platform mobile applications with Flutter and Dart.",
     },
     {
       image: "/assets/certificates/linux-admin.png",
       issuer: "IWCampus",
       title: "Linux Administrator Training",
       description:
-        "Completed training on Linux administration, covering essential system management and networking concepts.",
+        "Completed a comprehensive Linux training program, gaining practical skills in system administration, server management, and shell scripting.",
+    },
+    {
+      image: "/assets/certificates/generative-ai-model.jpeg",
+      issuer: "NxtWave",
+      title: "Generative AI Model Workshop",
+      description:
+        "Participated in a hands-on workshop exploring generative AI models, learning the fundamentals of creating intelligent applications using AI.",
+    },
+    {
+      image: "/assets/certificates/upcode.png",
+      issuer: "Upcode",
+      title: "Python AI Bootcamp",
+      description:
+        "Attended an intensive bootcamp focused on Python and AI, gaining expertise in building AI-driven applications and mastering Python programming.",
     },
   ],
 };
