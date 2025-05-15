@@ -11,11 +11,12 @@ export const ProjectsSection = ({
   currentPage,
   totalPages,
   onPageChange,
+  totalProjects,
 }: ProjectsSectionProps) => {
   return (
     <>
       <h2 className="capitalize text-3xl md:text-5xl font-bold text-center pt-10">
-        {title}
+        {title} ({totalProjects})
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-10 lg:min-h-[70vh]">

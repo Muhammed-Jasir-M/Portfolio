@@ -21,6 +21,8 @@ const Projects = () => {
     indexOfLastProject
   );
 
+  const totalProjects = projects.items.length;
+
   const totalContributedPages = Math.ceil(
     contributedProjects.items.length / projectsPerPage
   );
@@ -32,6 +34,8 @@ const Projects = () => {
     indexOfFirstContributedProject,
     indexOfLastContributedProject
   );
+
+  const totalContributedProjects = contributedProjects.items.length;
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -51,6 +55,7 @@ const Projects = () => {
         projects={currentProjects}
         currentPage={currentPage}
         totalPages={totalPages}
+        totalProjects={totalProjects}
         onPageChange={setCurrentPage}
       />
 
@@ -59,6 +64,7 @@ const Projects = () => {
         projects={currentContributedProjects}
         currentPage={currentContributedPage}
         totalPages={totalContributedPages}
+        totalProjects={totalContributedProjects}
         onPageChange={setCurrentContributedPage}
       />
     </motion.section>

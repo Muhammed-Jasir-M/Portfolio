@@ -15,5 +15,6 @@ export interface ProjectsSectionProps {
   projects: ProjectProps[];
   currentPage: number;
   totalPages: number;
+  totalProjects: number;
   onPageChange: (page: number) => void;
 }
