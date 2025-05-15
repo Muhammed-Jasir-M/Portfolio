@@ -186,7 +186,7 @@ export const certificates = {
   title: "Certificates",
   items: [
     {
-      image: "/assets/certificates/cyralearnings.png",
+      image: "/assets/certificates/cyralearnings.jpeg",
       issuer: "Cyra Learnings",
       title: "Flutter Development Program",
       description:
@@ -207,7 +207,7 @@ export const certificates = {
         "Participated in a hands-on workshop exploring generative AI models, learning the fundamentals of creating intelligent applications using AI.",
     },
     {
-      image: "/assets/certificates/upcode.png",
+      image: "/assets/certificates/upcode.jpeg",
       issuer: "Upcode",
       title: "Python AI Bootcamp",
       description:

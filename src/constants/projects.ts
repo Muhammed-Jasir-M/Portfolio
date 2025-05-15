@@ -28,7 +28,7 @@ export const projects = {
       apkUrl: "",
       skills: ["Flutter", "Firebase", "Dart", "GetX", "Cloudinary"],
       category: "Mobile",
-      image: "/assets/screenshots/dekozy.png",
+      image: "/assets/screenshots/dekozy.jpeg",
       repoType: "private",
     },
     {
@@ -119,7 +119,7 @@ export const projects = {
       apkUrl: "",
       skills: ["Flutter", "Dart"],
       category: "Mobile",
-      image: "/assets/screenshots/calculator_app.png",
+      image: "/assets/screenshots/calculator_app.jpeg",
       repoType: "public",
     },
     {
@@ -131,7 +131,7 @@ export const projects = {
       apkUrl: "",
       skills: ["Flutter", "Dart"],
       category: "Mobile",
-      image: "/assets/screenshots/ar_model_app.png",
+      image: "/assets/screenshots/ar_model_app.jpeg",
       repoType: "public",
     },
     {
