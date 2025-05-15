@@ -26,7 +26,7 @@ export const stats = [
   },
 
   {
-    num: 16,
+    num: 20,
     text: "Projects completed",
   },
 
