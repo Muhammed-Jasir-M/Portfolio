@@ -5,7 +5,7 @@ export const projects = {
       id: "01",
       title: "Portfolio Website",
       description:
-        "Personal portfolio built with Next.js and Tailwind CSS. Features smooth animations, responsive layout, and elegant UI using Shadcn and Framer Motion.",
+        "Modern portfolio built with Next.js and Tailwind CSS featuring animated transitions, responsive layouts, and elegant UI components from Shadcn. Includes Framer Motion for smooth animations and showcases professional work effectively.",
       githubUrl: "https://github.com/Muhammed-Jasir-M/Portfolio",
       liveUrl: "https://muhammed-jasir-m.vercel.app/",
       skills: [
@@ -23,7 +23,7 @@ export const projects = {
       id: "02",
       title: "Dekozy E-Commerce App",
       description:
-        "Full-featured Flutter e-commerce app with Firebase auth, real-time product updates, Cloudinary support, and state managed via GetX.",
+        "Feature-rich Flutter shopping app with Firebase authentication, real-time product updates, and Cloudinary media management. Uses GetX for efficient state management and offers seamless user experience.",
       githubUrl: "https://github.com/Muhammed-Jasir-M/Dekozy",
       apkUrl: "",
       skills: ["Flutter", "Firebase", "Dart", "GetX", "Cloudinary"],
@@ -35,7 +35,7 @@ export const projects = {
       id: "03",
       title: "Movie Flick",
       description:
-        "Movie platform using TMDB API and Firebase. Includes auth, trending carousels, watchlists, and a responsive, clean interface.",
+        "Comprehensive movie platform integrating TMDB API with Firebase backend. Features user authentication, trending carousels, personalized watchlists, and responsive Tailwind CSS styling.",
       githubUrl: "https://github.com/Muhammed-Jasir-M/Movie-Flick",
       liveUrl: "https://movie-flick.vercel.app/",
       skills: ["React", "JavaScript", "Tailwind CSS", "TMDB API", "Firebase"],
@@ -47,7 +47,7 @@ export const projects = {
       id: "04",
       title: "Netflix Clone",
       description:
-        "A Netflix-inspired site with Firebase auth, movie trailers, and category-based browsing. Built with React and Tailwind CSS.",
+        "Responsive Netflix-inspired platform with Firebase authentication and TMDB API integration. Features movie trailers, category browsing, and Tailwind CSS styling for modern UI components.",
       githubUrl: "https://github.com/Muhammed-Jasir-M/Netflix-Clone",
       liveUrl: "https://netflix-clone-nine-jade.vercel.app/",
       skills: ["React", "JavaScript", "Tailwind CSS", "TMDB API", "Firebase"],
@@ -59,7 +59,7 @@ export const projects = {
       id: "05",
       title: "Dekozy Admin Panel",
       description:
-        "Flutter Web admin dashboard for managing products, orders, and analytics. Integrates Firebase, Cloudinary, and responsive design.",
+        "Flutter-based admin dashboard for e-commerce management with Firebase integration. Handles products, orders, analytics, and features Cloudinary media support with responsive design.",
       githubUrl: "https://github.com/Muhammed-Jasir-M/Dekozy-Admin-Panel",
       liveUrl: "https://aura-kart.web.app/dashboard",
       skills: ["Flutter", "Firebase", "Dart", "GetX", "Cloudinary"],
@@ -71,7 +71,7 @@ export const projects = {
       id: "06",
       title: "The Blog Spot",
       description:
-        "A full-featured blog platform with rich text editing, user auth, and Flowbite UI components. Built with the MERN stack.",
+        "Full-stack blog platform built with MERN stack featuring rich text editing, user authentication, and Flowbite UI components. MongoDB backend with Express.js and React frontend.",
       githubUrl: "https://github.com/Muhammed-Jasir-M/Mern-Blog-Site",
       liveUrl: "https://mern-blog-site-x2re.onrender.com/",
       skills: [
@@ -90,7 +90,7 @@ export const projects = {
       id: "07",
       title: "Shopping Cart",
       description:
-        "Node.js app with MongoDB and Handlebars for product CRUD and cart session handling. Features a full shopping flow.",
+        "Node.js e-commerce application with MongoDB database and Handlebars templating. Implements product management, cart functionality, and Bootstrap UI components.",
       githubUrl: "https://github.com/Muhammed-Jasir-M/Shopping-Cart",
       liveUrl: "https://shopping-cart-xcmk.onrender.com/",
       skills: ["MongoDB", "Express.js", "Handlebars", "Node.js", "Bootstrap"],
@@ -102,7 +102,7 @@ export const projects = {
       id: "08",
       title: "Tic Tac Toe",
       description:
-        "A clean, responsive Tic Tac Toe game with TypeScript and React. Includes subtle animations and a mobile-friendly UI.",
+        "Interactive Tic Tac Toe game built with React and TypeScript. Features responsive design with Tailwind CSS, game state management, and subtle animations.",
       githubUrl: "https://github.com/Muhammed-Jasir-M/Tic-Tac-Toe",
       liveUrl: "https://tic-tac-toe-99acde.netlify.app/",
       skills: ["React", "TypeScript", "Tailwind CSS"],
@@ -114,7 +114,7 @@ export const projects = {
       id: "09",
       title: "Calculator App",
       description:
-        "A Flutter-based calculator with a sleek UI and built-in BMI calculator. Smooth performance and cross-platform ready.",
+        "Flutter-based calculator application with clean UI design. Includes standard calculator functions along with BMI calculation feature and smooth performance.",
       githubUrl: "https://github.com/Muhammed-Jasir-M/Calculator-App",
       apkUrl: "",
       skills: ["Flutter", "Dart"],
@@ -126,7 +126,7 @@ export const projects = {
       id: "10",
       title: "Ar Model App",
       description:
-        "AR-based Flutter app for 3D model interaction and viewing. Includes model info, AR mode, and clean user experience.",
+        "Augmented Reality application built with Flutter for 3D model visualization. Features model interaction, information display, and AR viewing capabilities.",
       githubUrl: "https://github.com/Muhammed-Jasir-M/Ar-Flutter-App",
       apkUrl: "",
       skills: ["Flutter", "Dart"],
@@ -138,7 +138,7 @@ export const projects = {
       id: "11",
       title: "Calculator Web",
       description:
-        "A browser-based calculator built with React and Tailwind CSS. Simple UI for quick, responsive math operations.",
+        "Web-based calculator application developed with React and Tailwind CSS. Provides responsive design and performs basic arithmetic operations efficiently.",
       githubUrl: "https://github.com/Muhammed-Jasir-M/Web-Calculator",
       liveUrl: "https://muhammed-jasir-m.github.io/Web-Calculator/",
       skills: ["React", "JavaScript", "Tailwind CSS"],
@@ -150,7 +150,7 @@ export const projects = {
       id: "12",
       title: "Rock Paper Scissors",
       description:
-        "Classic Rock-Paper-Scissors game with an interactive interface and score tracking. Built using vanilla JavaScript.",
+        "Classic game implementation using vanilla JavaScript. Features interactive UI with score tracking, responsive design, and simple game mechanics.",
       githubUrl: "https://github.com/Muhammed-Jasir-M/Rock-Paper-Scissors",
       liveUrl: "https://muhammed-jasir-m.github.io/Rock-Paper-Scissors/",
       skills: ["HTML", "CSS", "JavaScript"],
@@ -162,7 +162,7 @@ export const projects = {
       id: "13",
       title: "Nike Clone",
       description:
-        "A pixel-perfect Nike landing page clone made using React and Tailwind CSS. Focuses on UI replication and responsiveness.",
+        "Responsive Nike landing page clone built with React and Tailwind CSS. Replicates original design elements with attention to detail and mobile responsiveness.",
       githubUrl: "https://github.com/Muhammed-Jasir-M/Nike-Clone",
       liveUrl: "https://nike-clone-197a27.netlify.app/",
       skills: ["React", "JavaScript", "Tailwind CSS"],
