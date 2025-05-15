@@ -33,10 +33,6 @@ const Projects = () => {
     indexOfLastContributedProject
   );
 
-  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
-  const paginateContributed = (pageNumber: number) =>
-    setCurrentContributedPage(pageNumber);
-
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, [currentPage, currentContributedPage]);

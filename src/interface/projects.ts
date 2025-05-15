@@ -12,7 +12,7 @@ export interface ProjectProps {
 
 export interface ProjectsSectionProps {
   title: string;
-  projects: any[];
+  projects: ProjectProps[];
   currentPage: number;
   totalPages: number;
   onPageChange: (page: number) => void;
