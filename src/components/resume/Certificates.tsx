@@ -26,7 +26,7 @@ const Certificates = () => {
                   src={item.image}
                   alt={item.title}
                   width={300}
-                  height={200}
+                  height={230}
                   quality={100}
                   priority
                   className="rounded-lg w-full h-[250px]"
@@ -35,11 +35,11 @@ const Certificates = () => {
             </a>
 
             <CardContent className="">
-              <CardTitle className="text-accent text-xl lg:text-2xl h-[65px] font-bold text-center line-clamp-2 mb-2">
+              <CardTitle className="text-accent text-xl lg:text-2xl lg:h-[65px] font-bold text-center line-clamp-2 mb-2">
                 {item.title}
               </CardTitle>
 
-              <CardDescription className="text-lg lg:text-xl font-semibold text-white mb-2">
+              <CardDescription className="text-lg lg:text-xl font-semibold text-white mb-2 text-center">
                 {item.issuer}
               </CardDescription>
 

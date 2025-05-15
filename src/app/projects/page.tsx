@@ -53,9 +53,9 @@ const Projects = () => {
                   <Image
                     src={project.image}
                     alt={project.title}
-                    className="rounded-lg w-full h-[250px]"
+                    className="rounded-lg w-full h-[230px]"
                     width={300}
-                    height={250}
+                    height={230}
                     quality={100}
                     priority
                   />
@@ -67,7 +67,7 @@ const Projects = () => {
                   {project.title}
                 </CardTitle>
 
-                <CardDescription className="mb-2 line-clamp-5 text-center leading-relaxed font-medium text-sm">
+                <CardDescription className="mb-2 line-clamp-4 text-center leading-relaxed font-medium text-sm">
                   {project.description}
                 </CardDescription>
 
