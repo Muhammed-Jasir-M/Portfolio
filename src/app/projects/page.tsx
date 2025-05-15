@@ -23,14 +23,14 @@ import { BsArrowDownRight } from "react-icons/bs";
 const Projects = () => {
   return (
     <motion.section
-      className="container mx-auto py-12 mb-3 px-3 lg:px-4"
+      className="container mx-auto mb-3 px-3 lg:px-4"
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
         transition: { delay: 1, duration: 0.8, ease: "easeOut" },
       }}
     >
-      <h2 className="capitalize text-3xl md:text-5xl font-bold text-center pt-5">
+      <h2 className="capitalize text-3xl md:text-5xl font-bold text-center py-5">
         {projects.title}
       </h2>
 
@@ -47,26 +47,27 @@ const Projects = () => {
               },
             }}
           >
-            <Card className="bg-gradient-to-br from-primary-foreground to-primary-foreground/95 backdrop-blur-sm transition-all duration-300 hover:-translate-y-2 hover:shadow-lg">
+            <Card className="backdrop-blur-sm transform transition duration-300 hover:scale-105 hover:shadow-lg">
               <a href={project.image} target="_blank" rel="noopener noreferrer">
-                <div className="overflow-hidden rounded-t-lg">
+                <div className="overflow-hidden rounded-lg">
                   <Image
                     src={project.image}
                     alt={project.title}
-                    className="rounded-t-lg object-cover w-full h-[200px]"
+                    className="rounded-lg w-full h-[250px]"
                     width={300}
-                    height={200}
+                    height={250}
                     quality={100}
                     priority
                   />
                 </div>
               </a>
+
               <CardContent className="">
-                <CardTitle className="text-xl lg:text-2xl font-bold text-center text-accent mb-1.5">
+                <CardTitle className="text-xl lg:text-2xl font-bold text-center text-accent mb-2">
                   {project.title}
                 </CardTitle>
 
-                <CardDescription className="mb-1.5 line-clamp-3 text-center leading-relaxed font-medium">
+                <CardDescription className="mb-2 line-clamp-5 text-center leading-relaxed font-medium text-sm">
                   {project.description}
                 </CardDescription>
 

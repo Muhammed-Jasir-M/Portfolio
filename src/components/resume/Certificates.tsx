@@ -19,10 +19,10 @@ const Certificates = () => {
         {certificates.items.map((item, index) => (
           <Card
             key={index}
-            className="flex flex-col items-center gap-4 p-4 transform transition duration-300 hover:scale-105 hover:shadow-lg"
+            className="transform transition duration-300 hover:scale-105 hover:shadow-lg"
           >
-            <CardHeader className="items-center p-0">
-              <a href={item.image} target="_blank" rel="noopener noreferrer">
+            <a href={item.image} target="_blank" rel="noopener noreferrer">
+              <div className="overflow-hidden rounded-lg">
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -30,21 +30,21 @@ const Certificates = () => {
                   height={200}
                   quality={100}
                   priority
-                  className="bg-white/60 rounded-xl object-cover"
+                  className="rounded-lg w-full h-[250px]"
                 />
-              </a>
-            </CardHeader>
+              </div>
+            </a>
 
-            <CardContent className="flex flex-col items-center gap-2 p-0">
-              <CardTitle className="text-accent text-xl lg:text-2xl h-[65px] font-bold text-center line-clamp-2 text-accent">
+            <CardContent className="">
+              <CardTitle className="text-accent text-xl lg:text-2xl h-[65px] font-bold text-center line-clamp-2 mb-2">
                 {item.title}
               </CardTitle>
 
-              <CardDescription className="text-lg lg:text-xl font-semibold text-white">
+              <CardDescription className="text-lg lg:text-xl font-semibold text-white mb-2">
                 {item.issuer}
               </CardDescription>
 
-              <p className="text-center font-medium text-white/60 text-base">
+              <p className="text-center font-medium text-white/60 text-sm line-clamp-4 leading-relaxed">
                 {item.description}
               </p>
             </CardContent>
