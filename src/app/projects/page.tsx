@@ -19,8 +19,24 @@ import { FaLink } from "react-icons/fa6";
 import { FaAndroid, FaGithub } from "react-icons/fa";
 import Link from "next/link";
 import { BsArrowDownRight } from "react-icons/bs";
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
 
 const Projects = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+  const projectsPerPage = 6;
+
+  const totalPages = Math.ceil(projects.items.length / projectsPerPage);
+
+  const indexOfLastProject = currentPage * projectsPerPage;
+  const indexOfFirstProject = indexOfLastProject - projectsPerPage;
+  const currentProjects = projects.items.slice(
+    indexOfFirstProject,
+    indexOfLastProject
+  );
+
+  const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
+
   return (
     <motion.section
       className="container mx-auto mb-3 px-3 lg:px-4"
@@ -35,7 +51,7 @@ const Projects = () => {
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {projects.items.map((project, index) => (
+        {currentProjects.map((project, index) => (
           <motion.div
             key={project.id}
             initial={{ opacity: 0 }}
@@ -141,6 +157,30 @@ const Projects = () => {
             </Card>
           </motion.div>
         ))}
+      </div>
+
+      <div className="flex justify-center mt-8 gap-2">
+        <Button
+          variant="outline"
+          onClick={() => paginate(currentPage > 1 ? currentPage - 1 : 1)}
+          disabled={currentPage === 1}
+        >
+          Previous
+        </Button>
+
+        <span className="flex items-center px-4 py-2 text-sm">
+          Page {currentPage} of {totalPages}
+        </span>
+
+        <Button
+          variant="outline"
+          onClick={() =>
+            paginate(currentPage < totalPages ? currentPage + 1 : totalPages)
+          }
+          disabled={currentPage === totalPages}
+        >
+          Next
+        </Button>
       </div>
     </motion.section>
   );
