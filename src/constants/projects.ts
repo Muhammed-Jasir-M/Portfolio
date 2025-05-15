@@ -149,7 +149,8 @@ export const projects = {
     {
       id: "12",
       title: "Money Tracker App",
-      description: "",
+      description:
+        "Flutter expense tracking application with Bloc state management and Hive database. Features intuitive UI for recording expenses, categorizing transactions, and visualizing spending patterns with charts.",
       githubUrl: "https://github.com/Muhammed-Jasir-M/Money-Tracker-App",
       apkUrl: "",
       skills: ["Flutter", "Dart", "Bloc", "Hive"],
@@ -160,7 +161,8 @@ export const projects = {
     {
       id: "13",
       title: "Olx Clone",
-      description: "",
+      description:
+        "Classified ads platform clone with React and Firebase backend. Implements user authentication, ad posting functionality, and search features with responsive Tailwind CSS styling.",
       githubUrl: "https://github.com/Muhammed-Jasir-M/Olx-Clone",
       liveUrl: "https://olx-clone-chi-green.vercel.app/",
       skills: ["React", "JavaScript", "Firebase", "Tailwind CSS"],
@@ -171,7 +173,8 @@ export const projects = {
     {
       id: "14",
       title: "Disney Clone",
-      description: "",
+      description:
+        "Streaming service clone featuring TMDB API integration for content display. Includes responsive carousels, movie details pages, and Tailwind CSS styling for Disney+ inspired interface.",
       githubUrl: "https://github.com/Muhammed-Jasir-M/Disney-Clone",
       liveUrl: "https://disney-clone-12df46.netlify.app/",
       skills: ["React", "JavaScript", "Tailwind CSS", "TMDB API"],
@@ -182,7 +185,8 @@ export const projects = {
     {
       id: "15",
       title: "Trip Planning Bot",
-      description: "",
+      description:
+        "AI-powered travel assistant built with Python and Streamlit. Provides personalized itinerary suggestions, destination recommendations, and travel tips based on user preferences.",
       githubUrl: "https://github.com/Muhammed-Jasir-M/Trip-Planning-Bot",
       liveUrl: "https://trip-planning-bot-chatbot-xl82lz.streamlit.app/",
       skills: ["Python", "Streamlit"],
@@ -223,7 +227,8 @@ export const contributedProjects = {
     {
       id: "03",
       title: "Notepad",
-      description: "",
+      description:
+        "Cross-platform note-taking application built with Svelte and Tauri. Features markdown support, dark/light themes, and desktop app packaging with clean Shadcn UI components.",
       githubUrl: "https://github.com/Muhammed-Rahif/Notpad",
       liveUrl: "https://notpad-enhanced.vercel.app/",
       skills: ["Svelte", "Tauri", "Tailwind CSS", "Shadcn UI"],
@@ -233,19 +238,9 @@ export const contributedProjects = {
     },
     {
       id: "04",
-      title: "Notepad",
-      description: "",
-      githubUrl: "https://github.com/Muhammed-Rahif/Notpad",
-      liveUrl: "https://notpad-enhanced.vercel.app/",
-      skills: ["Svelte", "Tauri", "Tailwind CSS", "Shadcn UI"],
-      category: "Frontend",
-      image: "/assets/screenshots/notepad.png",
-      repoType: "public",
-    },
-    {
-      id: "05",
       title: "E Commerce Site",
-      description: "",
+      description:
+        "React-based online store prototype with product listings and shopping cart functionality. Features responsive Tailwind CSS design and interactive product browsing experience.",
       githubUrl: "https://github.com/sinankambran/ecommerce-app",
       liveUrl: "https://ecommerce-app-bay-eight.vercel.app/",
       skills: ["React", "JavaScript", "Tailwind CSS"],
@@ -254,9 +249,10 @@ export const contributedProjects = {
       repoType: "public",
     },
     {
-      id: "06",
+      id: "05",
       title: "Dedo Todo App",
-      description: "",
+      description:
+        "Flutter task management application with Bloc architecture and SQLite local storage. Offers task categorization, priority levels, and offline capability with clean material design.",
       githubUrl: "https://github.com/Nihal-Mohammed-V/Dedov2",
       apkUrl: "",
       skills: ["Flutter", "Dart", "Sqlite", "Bloc"],
