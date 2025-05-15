@@ -1,15 +1,15 @@
 "use client";
 
-import { projects } from "@/constants/projects";
+import { projects, contributedProjects } from "@/constants/projects";
 import { motion } from "framer-motion";
 
 import { useEffect, useState } from "react";
-import { Button } from "@/components/ui/button";
-import ProjectCard from "@/components/projects/ProjectCard";
 import { ProjectsSection } from "@/components/projects/ProjectsSection";
 
 const Projects = () => {
   const [currentPage, setCurrentPage] = useState(1);
+  const [currentContributedPage, setCurrentContributedPage] = useState(1);
+
   const projectsPerPage = 6;
 
   const totalPages = Math.ceil(projects.items.length / projectsPerPage);
@@ -21,11 +21,25 @@ const Projects = () => {
     indexOfLastProject
   );
 
+  const totalContributedPages = Math.ceil(
+    contributedProjects.items.length / projectsPerPage
+  );
+  const indexOfLastContributedProject =
+    currentContributedPage * projectsPerPage;
+  const indexOfFirstContributedProject =
+    indexOfLastContributedProject - projectsPerPage;
+  const currentContributedProjects = contributedProjects.items.slice(
+    indexOfFirstContributedProject,
+    indexOfLastContributedProject
+  );
+
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
+  const paginateContributed = (pageNumber: number) =>
+    setCurrentContributedPage(pageNumber);
 
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [currentPage]);
+  }, [currentPage, currentContributedPage]);
 
   return (
     <motion.section
@@ -42,6 +56,14 @@ const Projects = () => {
         currentPage={currentPage}
         totalPages={totalPages}
         onPageChange={setCurrentPage}
+      />
+
+      <ProjectsSection
+        title={contributedProjects.title}
+        projects={currentContributedProjects}
+        currentPage={currentContributedPage}
+        totalPages={totalContributedPages}
+        onPageChange={setCurrentContributedPage}
       />
     </motion.section>
   );

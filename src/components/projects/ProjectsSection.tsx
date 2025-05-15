@@ -13,10 +13,6 @@ export const ProjectsSection = ({
   totalPages,
   onPageChange,
 }: ProjectsSectionProps) => {
-  useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  }, [currentPage]);
-
   return (
     <>
       <h2 className="capitalize text-3xl md:text-5xl font-bold text-center pt-5">

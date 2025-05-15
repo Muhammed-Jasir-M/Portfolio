@@ -21,18 +21,6 @@ export const projects = {
     },
     {
       id: "02",
-      title: "Dekozy E-Commerce App",
-      description:
-        "Feature-rich Flutter shopping app with Firebase authentication, real-time product updates, and Cloudinary media management. Uses GetX for efficient state management and offers seamless user experience.",
-      githubUrl: "https://github.com/Muhammed-Jasir-M/Dekozy",
-      apkUrl: "",
-      skills: ["Flutter", "Firebase", "Dart", "GetX", "Cloudinary"],
-      category: "Mobile",
-      image: "/assets/screenshots/dekozy.jpeg",
-      repoType: "private",
-    },
-    {
-      id: "03",
       title: "Movie Flick",
       description:
         "Comprehensive movie platform integrating TMDB API with Firebase backend. Features user authentication, trending carousels, personalized watchlists, and responsive Tailwind CSS styling.",
@@ -44,7 +32,7 @@ export const projects = {
       repoType: "private",
     },
     {
-      id: "04",
+      id: "03",
       title: "Netflix Clone",
       description:
         "Responsive Netflix-inspired platform with Firebase authentication and TMDB API integration. Features movie trailers, category browsing, and Tailwind CSS styling for modern UI components.",
@@ -56,19 +44,7 @@ export const projects = {
       repoType: "public",
     },
     {
-      id: "05",
-      title: "Dekozy Admin Panel",
-      description:
-        "Flutter-based admin dashboard for e-commerce management with Firebase integration. Handles products, orders, analytics, and features Cloudinary media support with responsive design.",
-      githubUrl: "https://github.com/Muhammed-Jasir-M/Dekozy-Admin-Panel",
-      liveUrl: "https://aura-kart.web.app/dashboard",
-      skills: ["Flutter", "Firebase", "Dart", "GetX", "Cloudinary"],
-      category: "Fullstack",
-      image: "/assets/screenshots/dekozy_admin_panel.png",
-      repoType: "private",
-    },
-    {
-      id: "06",
+      id: "04",
       title: "The Blog Spot",
       description:
         "Full-stack blog platform built with MERN stack featuring rich text editing, user authentication, and Flowbite UI components. MongoDB backend with Express.js and React frontend.",
@@ -87,7 +63,7 @@ export const projects = {
       repoType: "public",
     },
     {
-      id: "07",
+      id: "05",
       title: "Shopping Cart",
       description:
         "Node.js e-commerce application with MongoDB database and Handlebars templating. Implements product management, cart functionality, and Bootstrap UI components.",
@@ -99,7 +75,7 @@ export const projects = {
       repoType: "public",
     },
     {
-      id: "08",
+      id: "06",
       title: "Tic Tac Toe",
       description:
         "Interactive Tic Tac Toe game built with React and TypeScript. Features responsive design with Tailwind CSS, game state management, and subtle animations.",
@@ -111,7 +87,7 @@ export const projects = {
       repoType: "public",
     },
     {
-      id: "09",
+      id: "07",
       title: "Calculator App",
       description:
         "Flutter-based calculator application with clean UI design. Includes standard calculator functions along with BMI calculation feature and smooth performance.",
@@ -123,7 +99,7 @@ export const projects = {
       repoType: "public",
     },
     {
-      id: "10",
+      id: "08",
       title: "Ar Model App",
       description:
         "Augmented Reality application built with Flutter for 3D model visualization. Features model interaction, information display, and AR viewing capabilities.",
@@ -135,7 +111,7 @@ export const projects = {
       repoType: "public",
     },
     {
-      id: "11",
+      id: "09",
       title: "Calculator Web",
       description:
         "Web-based calculator application developed with React and Tailwind CSS. Provides responsive design and performs basic arithmetic operations efficiently.",
@@ -147,7 +123,7 @@ export const projects = {
       repoType: "public",
     },
     {
-      id: "12",
+      id: "10",
       title: "Rock Paper Scissors",
       description:
         "Classic game implementation using vanilla JavaScript. Features interactive UI with score tracking, responsive design, and simple game mechanics.",
@@ -159,7 +135,7 @@ export const projects = {
       repoType: "public",
     },
     {
-      id: "13",
+      id: "11",
       title: "Nike Clone",
       description:
         "Responsive Nike landing page clone built with React and Tailwind CSS. Replicates original design elements with attention to detail and mobile responsiveness.",
@@ -169,6 +145,58 @@ export const projects = {
       category: "Frontend",
       image: "/assets/screenshots/nike_clone.png",
       repoType: "public",
+    },
+    {
+      id: "12",
+      title: "Money Tracker App",
+      description: "",
+      githubUrl: "https://github.com/Muhammed-Jasir-M/Money-Tracker-App",
+      apkUrl: "",
+      skills: ["Flutter", "Dart", "Bloc", "Hive"],
+      category: "Mobile",
+      image: "/assets/screenshots/money_tracker.png",
+      repoType: "public",
+    },
+    {
+      id: "13",
+      title: "Olx Clone",
+      description: "https://olx-clone-chi-green.vercel.app/",
+      githubUrl: "https://github.com/Muhammed-Jasir-M/Olx-Clone",
+      liveUrl: "",
+      skills: ["React", "JavaScript", "Firebase", "Tailwind CSS"],
+      category: "Frontend",
+      image: "/assets/screenshots/olx_clone.png",
+      repoType: "public",
+    },
+  ],
+};
+
+export const contributedProjects = {
+  title: "Contributions",
+  items: [
+    {
+      id: "01",
+      title: "Dekozy E-Commerce App",
+      description:
+        "Feature-rich Flutter shopping app with Firebase authentication, real-time product updates, and Cloudinary media management. Uses GetX for efficient state management and offers seamless user experience.",
+      githubUrl: "https://github.com/Muhammed-Jasir-M/Dekozy",
+      apkUrl: "",
+      skills: ["Flutter", "Firebase", "Dart", "GetX", "Cloudinary"],
+      category: "Mobile",
+      image: "/assets/screenshots/dekozy.jpeg",
+      repoType: "private",
+    },
+    {
+      id: "02",
+      title: "Dekozy Admin Panel",
+      description:
+        "Flutter-based admin dashboard for e-commerce management with Firebase integration. Handles products, orders, analytics, and features Cloudinary media support with responsive design.",
+      githubUrl: "https://github.com/Muhammed-Jasir-M/Dekozy-Admin-Panel",
+      liveUrl: "https://aura-kart.web.app/dashboard",
+      skills: ["Flutter", "Firebase", "Dart", "GetX", "Cloudinary"],
+      category: "Fullstack",
+      image: "/assets/screenshots/dekozy_admin_panel.png",
+      repoType: "private",
     },
   ],
 };
