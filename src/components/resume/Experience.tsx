@@ -33,6 +33,7 @@ const Experience = () => {
                 className="w-full md:w-[60%] mx-auto my-8 flex flex-col items-start md:items-center justify-between"
               >
                 <CircleIcon />
+
                 <motion.div
                   initial={{ y: 50, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
@@ -40,16 +41,17 @@ const Experience = () => {
                   viewport={{ once: false, amount: 0.3 }}
                   className="ml-16 md:ml-0 md:text-left"
                 >
-                  <h3 className="flex flex-col md:flex-row capitalize font-bold text-xl md:text-2xl">
-                    {item.position}&nbsp;
-                    <a
-                      href={item.companyLink}
-                      target="_blank"
-                      className="text-accent capitalize"
-                    >
-                      @{item.company}
-                    </a>
+                  <h3 className="capitalize font-bold text-xl md:text-2xl text-accent">
+                    {item.position};
                   </h3>
+
+                  <a
+                    href={item.companyLink}
+                    target="_blank"
+                    className="capitalize text-xl"
+                  >
+                    @{item.company}
+                  </a>
 
                   <h4 className="capitalize font-medium text-white/80">
                     {item.duration}
@@ -59,7 +61,7 @@ const Experience = () => {
                     {item.address}
                   </p>
 
-                  <p className="font-medium w-full text-white/60">
+                  <p className="text-base font-medium w-full text-white/60">
                     {item.description}
                   </p>
                 </motion.div>

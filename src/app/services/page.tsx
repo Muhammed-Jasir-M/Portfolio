@@ -49,7 +49,7 @@ const Services = () => {
                     </TooltipProvider>
                   </Link>
                 </div>
-                <h2 className="text-3xl lg:text-4xl font-bold text-accent lg:text-white group-hover:text-accent transition-all duration-500">
+                <h2 className="text-3xl lg:text-4xl font-bold text-accent transition-all duration-500">
                   {service.title}
                 </h2>
                 <p className="text-white/60">{service.description}</p>

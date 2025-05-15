@@ -33,6 +33,7 @@ const Education = () => {
                 className="w-full md:w-[60%] mx-auto my-8 flex flex-col items-start md:items-center justify-between"
               >
                 <CircleIcon />
+
                 <motion.div
                   initial={{ y: 50, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
@@ -60,7 +61,7 @@ const Education = () => {
                     {item.address}
                   </p>
 
-                  <p className="font-medium w-full text-white/60">
+                  <p className="text-base font-medium w-full text-white/60">
                     {item.description}
                   </p>
                 </motion.div>

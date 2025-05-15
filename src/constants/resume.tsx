@@ -24,6 +24,7 @@ import {
   SiTailwindcss,
   SiBootstrap,
   SiRender,
+  SiGetx,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
@@ -100,10 +101,10 @@ export const skills = {
       ],
     },
     {
-      subTitle: "Mobile & Cross-Platform",
+      subTitle: "Mobile",
       skills: [
         { name: "Flutter", icon: <FaFlutter /> },
-        { name: "GetX", icon: <FaFlutter /> },
+        { name: "GetX", icon: <SiGetx /> },
         { name: "BLoC", icon: <FaFlutter /> },
       ],
     },
@@ -125,9 +126,9 @@ export const skills = {
         { name: "VS Code", icon: <VscVscode /> },
         { name: "Vercel", icon: <SiVercel /> },
         { name: "Netlify", icon: <SiNetlify /> },
+        { name: "Render", icon: <SiRender /> },
         { name: "Figma", icon: <SiFigma /> },
         { name: "Canva", icon: <SiCanva /> },
-        { name: "Render", icon: <SiRender /> },
       ],
     },
   ],

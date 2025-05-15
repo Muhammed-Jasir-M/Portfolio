@@ -4,7 +4,7 @@ export const services = [
     title: "Web Development",
     value: "web-development",
     description:
-      "Custom, high-performance websites with modern frameworks like React, Next.js, and MERN stack for scalable solutions.",
+      "Custom, high-performance websites using modern frameworks like React, Next.js, and MERN stack for speed, scalability, and flexibility.",
     href: "",
   },
   {
@@ -12,7 +12,7 @@ export const services = [
     title: "Mobile App Development",
     value: "mobile-app-development",
     description:
-      "Cross-platform mobile apps with Flutter for smooth, native-like performance on iOS and Android.",
+      "Cross-platform mobile apps built with Flutter, offering fast, native-like performance and consistent UX on both iOS and Android devices.",
     href: "",
   },
   {
@@ -20,15 +20,15 @@ export const services = [
     title: "Backend Development",
     value: "backend-development",
     description:
-      "Secure, scalable backend systems built with Node.js, Express & MongoDB. Features RESTful APIs, auth (JWT/OAuth), and real-time data handling.",
+      "Robust and secure backend systems using Node.js, Express, and MongoDB with RESTful APIs, authentication, and real-time capabilities.",
     href: "",
   },
   {
-    num: "03",
+    num: "04",
     title: "UI/UX Design",
     value: "ui-ux-design",
     description:
-      "Intuitive, visually stunning interfaces designed for seamless user engagement and conversion optimization.",
+      "Elegant and user-focused interface designs that boost engagement, ensure usability, and drive better conversion across all platforms.",
     href: "",
   },
 ];
