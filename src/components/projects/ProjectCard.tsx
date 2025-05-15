@@ -51,7 +51,7 @@ const ProjectCard = ({ project }: { project: ProjectProps }) => {
             {project.title}
           </CardTitle>
 
-          <CardDescription className="mb-2 line-clamp-5 text-center leading-relaxed font-medium text-sm h-[90px]">
+          <CardDescription className="mb-2 line-clamp-5 text-center leading-relaxed font-medium text-sm h-[96px]">
             {project.description}
           </CardDescription>
 

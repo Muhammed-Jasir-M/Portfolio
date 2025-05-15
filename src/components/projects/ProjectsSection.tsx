@@ -14,7 +14,7 @@ export const ProjectsSection = ({
 }: ProjectsSectionProps) => {
   return (
     <>
-      <h2 className="capitalize text-3xl md:text-5xl font-bold text-center pt-5">
+      <h2 className="capitalize text-3xl md:text-5xl font-bold text-center pt-10">
         {title}
       </h2>
 
