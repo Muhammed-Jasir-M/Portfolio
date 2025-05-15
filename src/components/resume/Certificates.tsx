@@ -2,7 +2,6 @@ import { certificates } from "@/constants/resume";
 import Image from "next/image";
 import {
   Card,
-  CardHeader,
   CardTitle,
   CardDescription,
   CardContent,
