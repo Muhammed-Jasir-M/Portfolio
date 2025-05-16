@@ -5,7 +5,7 @@ export const home = {
   job: "Full Stack Developer",
   description:
     "I'm a passionate full-stack developer from Kerala, India, specializing in building innovative digital solutions. With expertise in Flutter, React, and MERN Stack, I craft seamless web and mobile experiences that solve real-world problems efficiently.",
-  image: "/assets/hi.png",
+  image: "/assets/profile/muhammed-jasir-m.png",
   resume: "",
 };
 
