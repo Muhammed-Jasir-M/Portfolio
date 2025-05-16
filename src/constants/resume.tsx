@@ -25,6 +25,10 @@ import {
   SiBootstrap,
   SiRender,
   SiGetx,
+  SiSqlite,
+  SiHive,
+  SiFlutter,
+  SiCloudinary,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
@@ -105,7 +109,9 @@ export const skills = {
       skills: [
         { name: "Flutter", icon: <FaFlutter /> },
         { name: "GetX", icon: <SiGetx /> },
-        { name: "BLoC", icon: <FaFlutter /> },
+        { name: "BLoC", icon: <SiFlutter /> },
+        { name: "Sqlite", icon: <SiSqlite /> },
+        { name: "Hive", icon: <SiHive /> },
       ],
     },
     {
@@ -116,6 +122,7 @@ export const skills = {
         { name: "MongoDB", icon: <SiMongodb /> },
         { name: "PostgreSQL", icon: <SiPostgresql /> },
         { name: "Firebase", icon: <SiFirebase /> },
+        { name: "Cloudinary", icon: <SiCloudinary /> },
       ],
     },
     {

@@ -13,8 +13,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Muhammed Jasir M's Portfolio",
-  description: "Muhammed Jasir M's Portfolio Website",
+  title: "Muhammed Jasir M | Software Developer",
+  description:
+    "Showcasing projects, skills, and experience of Muhammed Jasir M, a developer specializing in Flutter, React, and the MERN stack.",
 };
 
 export default function RootLayout({
@@ -29,7 +30,7 @@ export default function RootLayout({
         <StairTransition />
         <main className="pt-16">
           <PageTransition>{children}</PageTransition>
-        </main>{" "}
+        </main>
         <Footer />
       </body>
     </html>
