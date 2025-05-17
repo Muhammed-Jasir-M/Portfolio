@@ -68,8 +68,8 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
+    "mainEntity": {
+      "@type": "Person",
       "@id": "https://muhammed-jasir-m.vercel.app/"
     },
     name: "Muhammed Jasir M",
