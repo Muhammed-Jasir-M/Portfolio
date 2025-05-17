@@ -55,6 +55,9 @@ export const metadata: Metadata = {
       "https://muhammed-jasir-m.vercel.app/assets/profile/muhammed-jasir-m.png",
     ],
   },
+  verification: {
+    google: "2d1911838c7295cc", 
+  },
 };
 
 export default function RootLayout({
