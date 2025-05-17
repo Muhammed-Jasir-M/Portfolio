@@ -1,6 +1,6 @@
-import type { NextSitemapConfig } from 'next-sitemap'
+import type { IConfig } from 'next-sitemap'
 
-const config: NextSitemapConfig = {
+const config: IConfig = {
   siteUrl: 'https://muhammed-jasir-m.vercel.app/',
   generateRobotsTxt: true,
   changefreq: 'daily',
