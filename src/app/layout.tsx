@@ -68,10 +68,7 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Person",
-    "mainEntity": {
-      "@type": "Person",
       "@id": "https://muhammed-jasir-m.vercel.app/"
-    },
     name: "Muhammed Jasir M",
     description:
       "Full-stack developer specializing in Flutter, React, and MERN stack.",
