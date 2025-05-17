@@ -66,22 +66,19 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const jsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "@id": "https://muhammed-jasir-m.vercel.app/",
-    name: "Muhammed Jasir M",
-    description:
-      "Full-stack developer specializing in Flutter, React, and MERN stack.",
-    url: "https://muhammed-jasir-m.vercel.app",
-    image:
-      "https://muhammed-jasir-m.vercel.app/assets/profile/muhammed-jasir-m.png",
-    sameAs: [
-      "https://www.linkedin.com/in/Muhammed-Jasir-M",
-      "https://github.com/Muhammed-Jasir-M",
-      "https://x.com/Muhammed_Jasir1",
-    ],
-    jobTitle: "Software Developer",
-  };
+  "@context": "https://schema.org/",
+  "@type": "Person",
+  "name": "Muhammed Jasir M",
+  "url": "https://muhammed-jasir-m.vercel.app",
+  "image": "https://muhammed-jasir-m.vercel.app/assets/profile/muhammed-jasir-m.png",
+  "sameAs": [
+    "https://www.linkedin.com/in/Muhammed-Jasir-M",
+    "https://github.com/Muhammed-Jasir-M",
+    "https://x.com/Muhammed_Jasir1",
+    "https://www.instagram.com/_jasir_10"
+  ],
+  "jobTitle": "Software Developer"  
+};
 
   return (
     <html lang="en">
