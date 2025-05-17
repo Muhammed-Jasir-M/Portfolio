@@ -5,7 +5,6 @@ import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
 import Footer from "@/components/Footer";
-import Head from 'next/head';
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
@@ -56,6 +55,9 @@ export const metadata: Metadata = {
       "https://muhammed-jasir-m.vercel.app/assets/profile/muhammed-jasir-m.png",
     ],
   },
+  verification: {
+    google: "t-Y7GCBnPb_dvkhMd2QcjrYcExbEa4-Mylz4134z58c", 
+  },
 };
 
 export default function RootLayout({
@@ -82,11 +84,6 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <head>
-        <meta name="google-site-verification"
-          content="2d1911838c7295cc"
-        />
-      </head>
       <body className={`${jetbrainsMono.variable} antialiased`}>
         <script
           type="application/ld+json"
