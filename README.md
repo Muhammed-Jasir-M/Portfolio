@@ -18,8 +18,7 @@ This project is built with [Next.js](https://nextjs.org/) and showcases my skill
 - `app/` — Main application routes and layout (Next.js App Router)
 - `components/` — Reusable React components (e.g., Navbar, Footer, ProjectCard)
 - `public/` — Static assets like images, favicon, and other media
-- `styles/` — Global and component-specific CSS/SCSS files
-- `data/` — (Optional) Structured data for projects, skills, etc.
+- `constants/` — Structured data for projects, skills, etc.
 
 ## ⚡ Getting Started
 
