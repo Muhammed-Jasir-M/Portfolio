@@ -220,12 +220,5 @@ export const certificates = {
       description:
         "Attended an intensive bootcamp focused on Python and AI, gaining expertise in building AI-driven applications and mastering Python programming.",
     },
-    {
-      image: "/assets/certificates/generative-ai-model.jpeg",
-      issuer: "NxtWave",
-      title: "Generative AI Model Workshop",
-      description:
-        "Participated in a hands-on workshop exploring generative AI models, learning the fundamentals of creating intelligent applications using AI.",
-    },
   ],
 };
