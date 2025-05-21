@@ -14,6 +14,9 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Muhammed Jasir M | Software Developer",
+  icons: {
+    icon: "/assets/favicon.png",
+  },
   description:
     "Portfolio of Muhammed Jasir M – Full-stack developer specializing in Flutter, React, and the MERN stack. Explore projects, resume, contact info and other details.",
   keywords: [
@@ -56,7 +59,7 @@ export const metadata: Metadata = {
     ],
   },
   verification: {
-    google: "t-Y7GCBnPb_dvkhMd2QcjrYcExbEa4-Mylz4134z58c", 
+    google: "t-Y7GCBnPb_dvkhMd2QcjrYcExbEa4-Mylz4134z58c",
   },
 };
 
@@ -66,19 +69,20 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const jsonLd = {
-  "@context": "https://schema.org/",
-  "@type": "Person",
-  "name": "Muhammed Jasir M",
-  "url": "https://muhammed-jasir-m.vercel.app",
-  "image": "https://muhammed-jasir-m.vercel.app/assets/profile/muhammed-jasir-m.png",
-  "sameAs": [
-    "https://www.linkedin.com/in/Muhammed-Jasir-M",
-    "https://github.com/Muhammed-Jasir-M",
-    "https://x.com/Muhammed_Jasir1",
-    "https://www.instagram.com/_jasir_10"
-  ],
-  "jobTitle": "Software Developer"  
-};
+    "@context": "https://schema.org/",
+    "@type": "Person",
+    name: "Muhammed Jasir M",
+    url: "https://muhammed-jasir-m.vercel.app",
+    image:
+      "https://muhammed-jasir-m.vercel.app/assets/profile/muhammed-jasir-m.png",
+    sameAs: [
+      "https://www.linkedin.com/in/Muhammed-Jasir-M",
+      "https://github.com/Muhammed-Jasir-M",
+      "https://x.com/Muhammed_Jasir1",
+      "https://www.instagram.com/_jasir_10",
+    ],
+    jobTitle: "Software Developer",
+  };
 
   return (
     <html lang="en">
