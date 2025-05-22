@@ -29,7 +29,7 @@ const Certificates = () => {
                   height={230}
                   quality={100}
                   priority
-                  className="rounded-lg w-full h-[250px]"
+                  className="rounded-lg w-full h-[250px] bg-primary"
                 />
               </div>
             </a>

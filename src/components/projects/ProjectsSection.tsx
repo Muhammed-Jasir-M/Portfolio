@@ -47,7 +47,7 @@ export const ProjectsSection = ({
         </Button>
 
         <span className="flex items-center px-4 py-2 text-sm">
-          Page {currentPage} of {totalPages}
+          {currentPage} of {totalPages}
         </span>
 
         <Button
