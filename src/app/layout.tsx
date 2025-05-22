@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
 import StairTransition from "@/components/StairTransition";
 import Footer from "@/components/Footer";
+import Head from "next/head";
 
 const jetbrainsMono = JetBrains_Mono({
   variable: "--font-jetbrains-mono",
@@ -49,15 +50,6 @@ export const metadata: Metadata = {
     locale: "en_US",
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Muhammed Jasir M | Software Developer",
-    description: "Check out my developer portfolio.",
-    creator: "@Muhammed_Jasir1",
-    images: [
-      "https://muhammed-jasir-m.vercel.app/assets/profile/muhammed-jasir-m.png",
-    ],
-  },
   verification: {
     google: "t-Y7GCBnPb_dvkhMd2QcjrYcExbEa4-Mylz4134z58c",
   },
@@ -69,14 +61,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const jsonLd = {
-    "@context": "https://schema.org/",
+    "@context": "https://schema.org",
     "@type": "Person",
     name: "Muhammed Jasir M",
     url: "https://muhammed-jasir-m.vercel.app",
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": "https://muhammed-jasir-m.vercel.app",
+    },
+    description:
+      "Full-stack developer specializing in Flutter, React, and the MERN stack.",
+    knowsAbout: ["Flutter", "React", "Node.js", "MongoDB", "TypeScript"],
     image:
       "https://muhammed-jasir-m.vercel.app/assets/profile/muhammed-jasir-m.png",
     sameAs: [
-      "https://www.linkedin.com/in/Muhammed-Jasir-M",
+      "https://www.linkedin.com/in/muhammed-jasir-m",
       "https://github.com/Muhammed-Jasir-M",
       "https://x.com/Muhammed_Jasir1",
       "https://www.instagram.com/_jasir_10",
@@ -86,11 +85,13 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${jetbrainsMono.variable} antialiased`}>
+      <Head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+      </Head>
+      <body className={`${jetbrainsMono.variable} antialiased`}>
         <Header />
         <StairTransition />
         <main className="pt-16">
