@@ -13,7 +13,7 @@ const About = () => {
           <Image
             src={about.image}
             alt={about.name}
-            className="rounded-xl object-cover bg-accent-foreground"
+            className="rounded-xl object-cover bg-primary-foreground"
             width={250}
             height={358}
             priority
