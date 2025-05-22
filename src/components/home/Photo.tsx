@@ -13,7 +13,7 @@ const Photo = () => {
           opacity: 1,
           transition: { delay: 1, duration: 0.4, ease: "easeInOut" },
         }}
-        className="w-[298px] h-[298px] lg:w-[318px] lg:h-[318px] mix-blend-lighten"
+        className="w-[298px] h-[298px] lg:w-[318px] lg:h-[318px] mix-blend-lighten rounded-full"
       >
         <Image
           src={home.image}
@@ -21,7 +21,7 @@ const Photo = () => {
           quality={100}
           fill
           alt={home.name}
-          className="object-contain"
+          className="object-cover rounded-full"
         />
       </motion.div>
     </div>
