@@ -6,7 +6,7 @@ export const home = {
   description:
     "I'm a passionate software developer from Kerala, India, specializing in building innovative digital solutions. With expertise in Flutter, React, and MERN Stack, I craft seamless web and mobile experiences that solve real-world problems efficiently.",
   image: "/assets/profile/muhammed-jasir-m.png",
-  resume: "",
+  resume: "/assets/resume/react-developer.pdf",
 };
 
 export const socials = [
