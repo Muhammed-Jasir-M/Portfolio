@@ -3,7 +3,6 @@ import Social from "@/components/home/Socials";
 import Stats from "@/components/home/Stats";
 import { Button } from "@/components/ui/button";
 import { home } from "@/constants/home";
-import Link from "next/link";
 import { FiDownload } from "react-icons/fi";
 
 export default function Home() {
@@ -24,7 +23,7 @@ export default function Home() {
             </p>
 
             <div className="flex flex-col lg:flex-row items-center gap-8 ">
-              <Link href={home.resume}>
+              <a href={home.resume} download="Jasir_Resume.pdf" target="_blank" rel="noopener noreferrer">
                 <Button
                   variant={"outline"}
                   size={"lg"}
@@ -33,7 +32,7 @@ export default function Home() {
                   <span>Download CV</span>
                   <FiDownload className="text-xl" />
                 </Button>
-              </Link>
+              </a>
 
               <div className="mb-8 lg:mb-0">
                 <Social />
